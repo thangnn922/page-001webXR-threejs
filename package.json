@@ -1,0 +1,26 @@
+{
+  "name": "thangnn-webxr-cube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --format=esm --outfile=dist/bundle.js --sourcemap",
+    "watch": "esbuild src/main.js --bundle --format=esm --outfile=dist/bundle.js --sourcemap --watch",
+    "start": "http-server . -p 8883 -c-1 --cors",
+    "dev": "npm run build && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@gltf-transform/cli": "^4.3.0",
+    "esbuild": "^0.27.4",
+    "http-server": "^14.1.1",
+    "ws": "^8.20.0"
+  },
+  "dependencies": {
+    "three": "^0.183.2"
+  }
+}

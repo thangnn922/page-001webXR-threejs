@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebXR AR – Two Cubes + Hand Tracking</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #000; overflow: hidden; font-family: sans-serif; }
+
+    #overlay {
+      position: absolute;
+      bottom: 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      pointer-events: none;
+      z-index: 10;
+      transition: opacity 0.4s;
+    }
+    #overlay.hidden { opacity: 0; pointer-events: none !important; }
+
+    #status {
+      color: #fff;
+      background: rgba(0,0,0,0.6);
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 15px;
+      text-align: center;
+      max-width: 85%;
+    }
+    #start-btn {
+      pointer-events: all;
+      padding: 14px 36px;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: 40px;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(255,255,255,0.3);
+      transition: transform 0.1s;
+    }
+    #start-btn:active   { transform: scale(0.96); }
+    #start-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    #ar-hint {
+      display: none;
+      position: absolute;
+      top: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      background: rgba(0,0,0,0.45);
+      padding: 5px 14px;
+      border-radius: 16px;
+      font-size: 13px;
+      pointer-events: none;
+      z-index: 10;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <div id="status">Loading…</div>
+    <button id="start-btn" disabled>Enter AR</button>
+  </div>
+  <div id="ar-hint">Pinch or trigger to grab either cube</div>
+
+  <!-- All logic bundled by esbuild – bare specifiers resolved, no importmap needed -->
+  <script type="module" src="/dist/bundle.js"></script>
+</body>
+</html>
