@@ -57,7 +57,7 @@ const fbxMat = new THREE.MeshStandardMaterial({ color: 0x88ccff, roughness: 0.3,
 // Load the converted GLB (originally cube.fbx, converted to cube.glb via tools/fbx2glb.js)
 const loader = new GLTFLoader();
 loader.load(
-  '/cube.glb',
+  './cube.glb',
   (gltf) => {
     const model = gltf.scene;
 

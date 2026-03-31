@@ -32275,7 +32275,7 @@ var require_main = __commonJS({
     var fbxMat = new MeshStandardMaterial({ color: 8965375, roughness: 0.3, metalness: 0.4 });
     var loader = new GLTFLoader();
     loader.load(
-      "/cube.glb",
+      "./cube.glb",
       (gltf) => {
         const model = gltf.scene;
         const box = new Box3().setFromObject(model);
