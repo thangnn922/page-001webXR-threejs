@@ -5,6 +5,8 @@
 
 ![WebXR AR Demo](video%20result.gif)
 
+> ⚡ **Performance:** Stable **80+ FPS** on Meta Quest 3 — smooth AR passthrough with hand tracking and dual object rendering running continuously without frame drops.
+
 ---
 
 ## 🎯 Project Target
@@ -180,6 +182,48 @@ Converter features:
 - **Meta Quest 3** (or any WebXR AR-capable device)
 - **Meta Quest Browser** (or Chromium-based browser with WebXR support)
 - Enable **Hand Tracking** in Quest settings: *Settings → Movement Tracking → Hand Tracking*
+
+---
+
+## ⚖️ Pros & Cons
+
+### WebXR + Three.js Approach
+
+| | Detail |
+|---|---|
+| ✅ **No app install** | Runs directly in the headset browser — share a URL, done |
+| ✅ **Cross-platform** | Same code works on Quest, HoloLens 2, Magic Leap, ARCore/ARKit browsers |
+| ✅ **Instant iteration** | Edit code → `npm run build` → reload browser. No Unity recompile, no APK build |
+| ✅ **GitHub Pages deploy** | Free HTTPS hosting, zero server cost, one `git push` to deploy |
+| ✅ **80+ FPS** | Three.js + esbuild bundle runs well within Quest 3's 90 Hz budget |
+| ✅ **Open standard** | WebXR is a W3C spec — no vendor lock-in, no proprietary SDK |
+| ✅ **Small bundle** | 1.3 MB esbuild output — loads fast even over ADB Wi-Fi bridge |
+| ❌ **No app store presence** | Cannot be listed on Meta App Lab or Quest Store |
+| ❌ **Limited system access** | No access to Guardian/boundary mesh, room mapping, or eye tracking APIs |
+| ❌ **Browser dependency** | Requires Meta Quest Browser — not available in-home menu by default; user must launch browser first |
+| ❌ **No offline support** | Requires network connection to load (no PWA/service worker implemented yet) |
+| ❌ **Performance ceiling** | Heavy scenes (large meshes, shadows, post-FX) hit browser GPU limits faster than native OpenXR |
+| ❌ **Hand tracking latency** | WebXR hand joints update at browser render rate (~72–90 Hz); native SDK can achieve lower latency |
+
+### esbuild Bundler
+
+| | Detail |
+|---|---|
+| ✅ **68 ms build time** | Instant feedback loop during development |
+| ✅ **Resolves bare specifiers** | `import 'three'` works without importmap — critical for Quest Browser (Chromium 144) |
+| ✅ **Single output file** | One HTTP request for all JS — no module waterfall |
+| ❌ **No tree-shaking granularity** | Entire Three.js renderer included even if only 30% is used (~1.3 MB) |
+| ❌ **Manual rebuild** | No HMR (Hot Module Replacement) — must reload the Quest browser tab after each build |
+
+### Custom FBX → GLB Converter
+
+| | Detail |
+|---|---|
+| ✅ **No external tools needed** | Pure Node.js, no Blender CLI, no Python, no Autodesk SDK |
+| ✅ **Spec-compliant output** | gltf-validator: 0 errors, 0 warnings, 0 hints |
+| ✅ **Tiny output** | 736 bytes for a cube — minimal network overhead |
+| ❌ **ASCII FBX 6.x only** | Does not support binary FBX, skeletal animation, materials, or UV maps |
+| ❌ **No normals exported** | Three.js computes flat normals at runtime; smooth normals from Blender are lost |
 
 ---
 
