@@ -32470,8 +32470,9 @@ var require_main = __commonJS({
       const hand = renderer.xr.getHand(i);
       scene.add(hand);
       hand.addEventListener("connected", (evt) => {
-        if (!evt.data.hand) return;
-        buildHandVisual(hand, i);
+        if (evt.data?.hand) {
+          buildHandVisual(hand, i);
+        }
         const ray = renderer.xr.getController(i).getObjectByName("ray");
         if (ray) ray.visible = false;
       });
@@ -32521,6 +32522,18 @@ var require_main = __commonJS({
       if (xrFrame && !spawned) {
         spawned = true;
         spawnObjects();
+      }
+      if (xrFrame) {
+        for (let i = 0; i < 2; i++) {
+          if (!handData[i]) {
+            const hand = renderer.xr.getHand(i);
+            if (hand.joints["wrist"]) {
+              buildHandVisual(hand, i);
+              const ray = renderer.xr.getController(i).getObjectByName("ray");
+              if (ray) ray.visible = false;
+            }
+          }
+        }
       }
       for (let i = 0; i < 2; i++) {
         const data = handData[i];
@@ -32582,14 +32595,32 @@ var require_main = __commonJS({
       } catch {
       }
     }
+    async function requestARSession() {
+      const configs = [
+        // Try 1: hand-tracking required — PICO 4 activates hands only this way
+        {
+          requiredFeatures: ["local-floor", "hand-tracking"],
+          optionalFeatures: ["bounded-floor", "layers"]
+        },
+        // Try 2: hand-tracking optional — Quest 3 / devices that support it but don't require it
+        {
+          requiredFeatures: ["local-floor"],
+          optionalFeatures: ["bounded-floor", "hand-tracking", "layers"]
+        }
+      ];
+      for (const cfg of configs) {
+        try {
+          return await navigator.xr.requestSession("immersive-ar", cfg);
+        } catch (_) {
+        }
+      }
+      throw new Error("Could not start AR session \u2014 check device compatibility.");
+    }
     startBtn.addEventListener("click", async () => {
       startBtn.disabled = true;
       statusEl.textContent = "Starting AR session\u2026";
       try {
-        const session = await navigator.xr.requestSession("immersive-ar", {
-          requiredFeatures: ["local-floor"],
-          optionalFeatures: ["bounded-floor", "hand-tracking", "layers"]
-        });
+        const session = await requestARSession();
         renderer.xr.setSession(session);
         overlay.classList.add("hidden");
         arHint.style.display = "block";

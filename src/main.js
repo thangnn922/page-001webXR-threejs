@@ -255,8 +255,12 @@ for (let i = 0; i < 2; i++) {
   scene.add(hand);
 
   hand.addEventListener('connected', (evt) => {
-    if (!evt.data.hand) return;
-    buildHandVisual(hand, i);
+    // Quest 3: evt.data.hand is set immediately.
+    // PICO 4: evt.data.hand may be null here; joints get populated a frame later.
+    // We attempt to build now, and the render-loop fallback catches the PICO 4 case.
+    if (evt.data?.hand) {
+      buildHandVisual(hand, i);
+    }
     const ray = renderer.xr.getController(i).getObjectByName('ray');
     if (ray) ray.visible = false;
   });
@@ -323,6 +327,22 @@ renderer.setAnimationLoop((_time, xrFrame) => {
 
   // Spawn objects on first real XR frame
   if (xrFrame && !spawned) { spawned = true; spawnObjects(); }
+
+  // PICO 4 fallback: build hand visuals if joints became available without 'connected' firing
+  if (xrFrame) {
+    for (let i = 0; i < 2; i++) {
+      if (!handData[i]) {
+        const hand = renderer.xr.getHand(i);
+        // Three.js populates hand.joints[name] as XRJointSpace objects once the
+        // platform provides them. If wrist joint exists, the hand is being tracked.
+        if (hand.joints['wrist']) {
+          buildHandVisual(hand, i);
+          const ray = renderer.xr.getController(i).getObjectByName('ray');
+          if (ray) ray.visible = false;
+        }
+      }
+    }
+  }
 
   // Update hand bone lines
   for (let i = 0; i < 2; i++) {
@@ -395,14 +415,30 @@ async function checkSupport() {
 }
 
 // ─── Enter AR ─────────────────────────────────────────────────────────────────
+// Request an AR session, preferring hand-tracking as required (PICO 4 needs this),
+// then falling back to optional (older / controller-only devices).
+async function requestARSession() {
+  const configs = [
+    // Try 1: hand-tracking required — PICO 4 activates hands only this way
+    { requiredFeatures: ['local-floor', 'hand-tracking'],
+      optionalFeatures: ['bounded-floor', 'layers'] },
+    // Try 2: hand-tracking optional — Quest 3 / devices that support it but don't require it
+    { requiredFeatures: ['local-floor'],
+      optionalFeatures: ['bounded-floor', 'hand-tracking', 'layers'] },
+  ];
+  for (const cfg of configs) {
+    try {
+      return await navigator.xr.requestSession('immersive-ar', cfg);
+    } catch (_) { /* try next config */ }
+  }
+  throw new Error('Could not start AR session — check device compatibility.');
+}
+
 startBtn.addEventListener('click', async () => {
   startBtn.disabled = true;
   statusEl.textContent = 'Starting AR session…';
   try {
-    const session = await navigator.xr.requestSession('immersive-ar', {
-      requiredFeatures: ['local-floor'],
-      optionalFeatures: ['bounded-floor', 'hand-tracking', 'layers'],
-    });
+    const session = await requestARSession();
     renderer.xr.setSession(session);
 
     overlay.classList.add('hidden');
