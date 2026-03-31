@@ -769,10 +769,12 @@ function getTextureTypeByteLength(type) {
   }
   throw new Error(`Unknown texture type ${type}.`);
 }
-var REVISION, CullFaceNone, CullFaceBack, CullFaceFront, PCFShadowMap, PCFSoftShadowMap, VSMShadowMap, FrontSide, BackSide, DoubleSide, NoBlending, NormalBlending, AdditiveBlending, SubtractiveBlending, MultiplyBlending, CustomBlending, AddEquation, SubtractEquation, ReverseSubtractEquation, MinEquation, MaxEquation, ZeroFactor, OneFactor, SrcColorFactor, OneMinusSrcColorFactor, SrcAlphaFactor, OneMinusSrcAlphaFactor, DstAlphaFactor, OneMinusDstAlphaFactor, DstColorFactor, OneMinusDstColorFactor, SrcAlphaSaturateFactor, ConstantColorFactor, OneMinusConstantColorFactor, ConstantAlphaFactor, OneMinusConstantAlphaFactor, NeverDepth, AlwaysDepth, LessDepth, LessEqualDepth, EqualDepth, GreaterEqualDepth, GreaterDepth, NotEqualDepth, MultiplyOperation, MixOperation, AddOperation, NoToneMapping, LinearToneMapping, ReinhardToneMapping, CineonToneMapping, ACESFilmicToneMapping, CustomToneMapping, AgXToneMapping, NeutralToneMapping, AttachedBindMode, DetachedBindMode, UVMapping, CubeReflectionMapping, CubeRefractionMapping, EquirectangularReflectionMapping, EquirectangularRefractionMapping, CubeUVReflectionMapping, RepeatWrapping, ClampToEdgeWrapping, MirroredRepeatWrapping, NearestFilter, NearestMipmapNearestFilter, NearestMipmapLinearFilter, LinearFilter, LinearMipmapNearestFilter, LinearMipmapLinearFilter, UnsignedByteType, ByteType, ShortType, UnsignedShortType, IntType, UnsignedIntType, FloatType, HalfFloatType, UnsignedShort4444Type, UnsignedShort5551Type, UnsignedInt248Type, UnsignedInt5999Type, UnsignedInt101111Type, AlphaFormat, RGBFormat, RGBAFormat, DepthFormat, DepthStencilFormat, RedFormat, RedIntegerFormat, RGFormat, RGIntegerFormat, RGBAIntegerFormat, RGB_S3TC_DXT1_Format, RGBA_S3TC_DXT1_Format, RGBA_S3TC_DXT3_Format, RGBA_S3TC_DXT5_Format, RGB_PVRTC_4BPPV1_Format, RGB_PVRTC_2BPPV1_Format, RGBA_PVRTC_4BPPV1_Format, RGBA_PVRTC_2BPPV1_Format, RGB_ETC1_Format, RGB_ETC2_Format, RGBA_ETC2_EAC_Format, R11_EAC_Format, SIGNED_R11_EAC_Format, RG11_EAC_Format, SIGNED_RG11_EAC_Format, RGBA_ASTC_4x4_Format, RGBA_ASTC_5x4_Format, RGBA_ASTC_5x5_Format, RGBA_ASTC_6x5_Format, RGBA_ASTC_6x6_Format, RGBA_ASTC_8x5_Format, RGBA_ASTC_8x6_Format, RGBA_ASTC_8x8_Format, RGBA_ASTC_10x5_Format, RGBA_ASTC_10x6_Format, RGBA_ASTC_10x8_Format, RGBA_ASTC_10x10_Format, RGBA_ASTC_12x10_Format, RGBA_ASTC_12x12_Format, RGBA_BPTC_Format, RGB_BPTC_SIGNED_Format, RGB_BPTC_UNSIGNED_Format, RED_RGTC1_Format, SIGNED_RED_RGTC1_Format, RED_GREEN_RGTC2_Format, SIGNED_RED_GREEN_RGTC2_Format, InterpolateDiscrete, InterpolateLinear, InterpolateSmooth, InterpolateBezier, ZeroCurvatureEnding, ZeroSlopeEnding, WrapAroundEnding, NormalAnimationBlendMode, TrianglesDrawMode, TriangleStripDrawMode, TriangleFanDrawMode, BasicDepthPacking, TangentSpaceNormalMap, ObjectSpaceNormalMap, NoColorSpace, SRGBColorSpace, LinearSRGBColorSpace, LinearTransfer, SRGBTransfer, KeepStencilOp, AlwaysStencilFunc, NeverCompare, LessCompare, EqualCompare, LessEqualCompare, GreaterCompare, NotEqualCompare, GreaterEqualCompare, AlwaysCompare, StaticDrawUsage, GLSL3, WebGLCoordinateSystem, WebGPUCoordinateSystem, _cache, _setConsoleFunction, ReversedDepthFuncs, EventDispatcher, _lut, _seed, DEG2RAD, RAD2DEG, MathUtils, Vector2, Quaternion, Vector3, _vector$c, _quaternion$5, Matrix3, _m3, LINEAR_REC709_TO_XYZ, XYZ_TO_LINEAR_REC709, ColorManagement, _canvas, ImageUtils, _sourceId, Source, _textureId, _tempVec3, Texture, Vector4, RenderTarget, WebGLRenderTarget, DataArrayTexture, Data3DTexture, Matrix4, _v1$7, _m1$2, _zero, _one, _x, _y, _z, _matrix$2, _quaternion$4, Euler, Layers, _object3DId, _v1$6, _q1, _m1$1, _target, _position$4, _scale$3, _quaternion$3, _xAxis, _yAxis, _zAxis, _addedEvent, _removedEvent, _childaddedEvent, _childremovedEvent, Object3D, Group, _moveEvent, WebXRController, _colorKeywords, _hslA, _hslB, Color, _color, Scene, _v0$2, _v1$5, _v2$4, _v3$2, _vab, _vac, _vbc, _vap, _vbp, _vcp, _v40, _v41, _v42, Triangle, Box3, _points, _vector$b, _box$4, _v0$1, _v1$4, _v2$3, _f0, _f1, _f2, _center, _extents, _triangleNormal, _testAxis, _vector$a, _vector2$1, _id$2, BufferAttribute, Uint16BufferAttribute, Uint32BufferAttribute, Float32BufferAttribute, _box$3, _v1$3, _v2$2, Sphere, _id$1, _m1, _obj, _offset, _box$2, _boxMorphTargets, _vector$9, BufferGeometry, InterleavedBuffer, _vector$8, InterleavedBufferAttribute, _materialId, Material, _vector$7, _segCenter, _segDir, _diff, _edge1, _edge2, _normal$1, Ray, MeshBasicMaterial, _inverseMatrix$3, _ray$3, _sphere$6, _sphereHitAt, _vA, _vB, _vC, _tempA, _morphA, _intersectionPoint, _intersectionPointWorld, Mesh, _basePosition, _skinIndex, _skinWeight, _vector3, _matrix4, _vertex, _sphere$5, _inverseMatrix$2, _ray$2, SkinnedMesh, Bone, DataTexture, _offsetMatrix, _identityMatrix, Skeleton, InstancedBufferAttribute, _instanceLocalMatrix, _instanceWorldMatrix, _instanceIntersects, _box3, _identity, _mesh$1, _sphere$4, InstancedMesh, _vector1, _vector2, _normalMatrix, Plane, _sphere$3, _defaultSpriteCenter, _vector$6, Frustum, LineBasicMaterial, _vStart, _vEnd, _inverseMatrix$1, _ray$1, _sphere$1, _intersectPointOnRay, _intersectPointOnSegment, Line, _start, _end, LineSegments, LineLoop, PointsMaterial, _inverseMatrix, _ray, _sphere, _position$3, Points, CubeTexture, DepthTexture, CubeDepthTexture, ExternalTexture, BoxGeometry, PlaneGeometry, SphereGeometry, UniformsUtils, default_vertex, default_fragment, ShaderMaterial, RawShaderMaterial, MeshStandardMaterial, MeshPhysicalMaterial, MeshDepthMaterial, MeshDistanceMaterial, Interpolant, CubicInterpolant, LinearInterpolant, DiscreteInterpolant, BezierInterpolant, KeyframeTrack, BooleanKeyframeTrack, ColorKeyframeTrack, NumberKeyframeTrack, QuaternionLinearInterpolant, QuaternionKeyframeTrack, StringKeyframeTrack, VectorKeyframeTrack, AnimationClip, Cache, LoadingManager, DefaultLoadingManager, Loader, loading, HttpError, FileLoader, _loading, ImageLoader, TextureLoader, Light, _projScreenMatrix, _lightPositionWorld, _lookTarget, LightShadow, _position$2, _quaternion$2, _scale$2, Camera, _v3$1, _minTarget, _maxTarget, PerspectiveCamera, SpotLightShadow, SpotLight, PointLightShadow, PointLight, OrthographicCamera, DirectionalLightShadow, DirectionalLight, AmbientLight, LoaderUtils, _errorMap, ImageBitmapLoader, fov, aspect, CubeCamera, ArrayCamera, _RESERVED_CHARS_RE, _reservedRe, _wordChar, _wordCharOrDot, _directoryRe, _nodeRe, _objectRe, _propertyRe, _trackRe, _supportedObjectNames, Composite, PropertyBinding, _controlInterpolantsResultBuffer, Clock;
+var REVISION, MOUSE, TOUCH, CullFaceNone, CullFaceBack, CullFaceFront, PCFShadowMap, PCFSoftShadowMap, VSMShadowMap, FrontSide, BackSide, DoubleSide, NoBlending, NormalBlending, AdditiveBlending, SubtractiveBlending, MultiplyBlending, CustomBlending, AddEquation, SubtractEquation, ReverseSubtractEquation, MinEquation, MaxEquation, ZeroFactor, OneFactor, SrcColorFactor, OneMinusSrcColorFactor, SrcAlphaFactor, OneMinusSrcAlphaFactor, DstAlphaFactor, OneMinusDstAlphaFactor, DstColorFactor, OneMinusDstColorFactor, SrcAlphaSaturateFactor, ConstantColorFactor, OneMinusConstantColorFactor, ConstantAlphaFactor, OneMinusConstantAlphaFactor, NeverDepth, AlwaysDepth, LessDepth, LessEqualDepth, EqualDepth, GreaterEqualDepth, GreaterDepth, NotEqualDepth, MultiplyOperation, MixOperation, AddOperation, NoToneMapping, LinearToneMapping, ReinhardToneMapping, CineonToneMapping, ACESFilmicToneMapping, CustomToneMapping, AgXToneMapping, NeutralToneMapping, AttachedBindMode, DetachedBindMode, UVMapping, CubeReflectionMapping, CubeRefractionMapping, EquirectangularReflectionMapping, EquirectangularRefractionMapping, CubeUVReflectionMapping, RepeatWrapping, ClampToEdgeWrapping, MirroredRepeatWrapping, NearestFilter, NearestMipmapNearestFilter, NearestMipmapLinearFilter, LinearFilter, LinearMipmapNearestFilter, LinearMipmapLinearFilter, UnsignedByteType, ByteType, ShortType, UnsignedShortType, IntType, UnsignedIntType, FloatType, HalfFloatType, UnsignedShort4444Type, UnsignedShort5551Type, UnsignedInt248Type, UnsignedInt5999Type, UnsignedInt101111Type, AlphaFormat, RGBFormat, RGBAFormat, DepthFormat, DepthStencilFormat, RedFormat, RedIntegerFormat, RGFormat, RGIntegerFormat, RGBAIntegerFormat, RGB_S3TC_DXT1_Format, RGBA_S3TC_DXT1_Format, RGBA_S3TC_DXT3_Format, RGBA_S3TC_DXT5_Format, RGB_PVRTC_4BPPV1_Format, RGB_PVRTC_2BPPV1_Format, RGBA_PVRTC_4BPPV1_Format, RGBA_PVRTC_2BPPV1_Format, RGB_ETC1_Format, RGB_ETC2_Format, RGBA_ETC2_EAC_Format, R11_EAC_Format, SIGNED_R11_EAC_Format, RG11_EAC_Format, SIGNED_RG11_EAC_Format, RGBA_ASTC_4x4_Format, RGBA_ASTC_5x4_Format, RGBA_ASTC_5x5_Format, RGBA_ASTC_6x5_Format, RGBA_ASTC_6x6_Format, RGBA_ASTC_8x5_Format, RGBA_ASTC_8x6_Format, RGBA_ASTC_8x8_Format, RGBA_ASTC_10x5_Format, RGBA_ASTC_10x6_Format, RGBA_ASTC_10x8_Format, RGBA_ASTC_10x10_Format, RGBA_ASTC_12x10_Format, RGBA_ASTC_12x12_Format, RGBA_BPTC_Format, RGB_BPTC_SIGNED_Format, RGB_BPTC_UNSIGNED_Format, RED_RGTC1_Format, SIGNED_RED_RGTC1_Format, RED_GREEN_RGTC2_Format, SIGNED_RED_GREEN_RGTC2_Format, InterpolateDiscrete, InterpolateLinear, InterpolateSmooth, InterpolateBezier, ZeroCurvatureEnding, ZeroSlopeEnding, WrapAroundEnding, NormalAnimationBlendMode, TrianglesDrawMode, TriangleStripDrawMode, TriangleFanDrawMode, BasicDepthPacking, TangentSpaceNormalMap, ObjectSpaceNormalMap, NoColorSpace, SRGBColorSpace, LinearSRGBColorSpace, LinearTransfer, SRGBTransfer, KeepStencilOp, AlwaysStencilFunc, NeverCompare, LessCompare, EqualCompare, LessEqualCompare, GreaterCompare, NotEqualCompare, GreaterEqualCompare, AlwaysCompare, StaticDrawUsage, GLSL3, WebGLCoordinateSystem, WebGPUCoordinateSystem, _cache, _setConsoleFunction, ReversedDepthFuncs, EventDispatcher, _lut, _seed, DEG2RAD, RAD2DEG, MathUtils, Vector2, Quaternion, Vector3, _vector$c, _quaternion$5, Matrix3, _m3, LINEAR_REC709_TO_XYZ, XYZ_TO_LINEAR_REC709, ColorManagement, _canvas, ImageUtils, _sourceId, Source, _textureId, _tempVec3, Texture, Vector4, RenderTarget, WebGLRenderTarget, DataArrayTexture, Data3DTexture, Matrix4, _v1$7, _m1$2, _zero, _one, _x, _y, _z, _matrix$2, _quaternion$4, Euler, Layers, _object3DId, _v1$6, _q1, _m1$1, _target, _position$4, _scale$3, _quaternion$3, _xAxis, _yAxis, _zAxis, _addedEvent, _removedEvent, _childaddedEvent, _childremovedEvent, Object3D, Group, _moveEvent, WebXRController, _colorKeywords, _hslA, _hslB, Color, _color, Scene, _v0$2, _v1$5, _v2$4, _v3$2, _vab, _vac, _vbc, _vap, _vbp, _vcp, _v40, _v41, _v42, Triangle, Box3, _points, _vector$b, _box$4, _v0$1, _v1$4, _v2$3, _f0, _f1, _f2, _center, _extents, _triangleNormal, _testAxis, _vector$a, _vector2$1, _id$2, BufferAttribute, Uint16BufferAttribute, Uint32BufferAttribute, Float32BufferAttribute, _box$3, _v1$3, _v2$2, Sphere, _id$1, _m1, _obj, _offset, _box$2, _boxMorphTargets, _vector$9, BufferGeometry, InterleavedBuffer, _vector$8, InterleavedBufferAttribute, _materialId, Material, _vector$7, _segCenter, _segDir, _diff, _edge1, _edge2, _normal$1, Ray, MeshBasicMaterial, _inverseMatrix$3, _ray$3, _sphere$6, _sphereHitAt, _vA, _vB, _vC, _tempA, _morphA, _intersectionPoint, _intersectionPointWorld, Mesh, _basePosition, _skinIndex, _skinWeight, _vector3, _matrix4, _vertex, _sphere$5, _inverseMatrix$2, _ray$2, SkinnedMesh, Bone, DataTexture, _offsetMatrix, _identityMatrix, Skeleton, InstancedBufferAttribute, _instanceLocalMatrix, _instanceWorldMatrix, _instanceIntersects, _box3, _identity, _mesh$1, _sphere$4, InstancedMesh, _vector1, _vector2, _normalMatrix, Plane, _sphere$3, _defaultSpriteCenter, _vector$6, Frustum, LineBasicMaterial, _vStart, _vEnd, _inverseMatrix$1, _ray$1, _sphere$1, _intersectPointOnRay, _intersectPointOnSegment, Line, _start, _end, LineSegments, LineLoop, PointsMaterial, _inverseMatrix, _ray, _sphere, _position$3, Points, CubeTexture, DepthTexture, CubeDepthTexture, ExternalTexture, BoxGeometry, PlaneGeometry, UniformsUtils, default_vertex, default_fragment, ShaderMaterial, RawShaderMaterial, MeshStandardMaterial, MeshPhysicalMaterial, MeshDepthMaterial, MeshDistanceMaterial, Interpolant, CubicInterpolant, LinearInterpolant, DiscreteInterpolant, BezierInterpolant, KeyframeTrack, BooleanKeyframeTrack, ColorKeyframeTrack, NumberKeyframeTrack, QuaternionLinearInterpolant, QuaternionKeyframeTrack, StringKeyframeTrack, VectorKeyframeTrack, AnimationClip, Cache, LoadingManager, DefaultLoadingManager, Loader, loading, HttpError, FileLoader, _loading, ImageLoader, TextureLoader, Light, _projScreenMatrix, _lightPositionWorld, _lookTarget, LightShadow, _position$2, _quaternion$2, _scale$2, Camera, _v3$1, _minTarget, _maxTarget, PerspectiveCamera, SpotLightShadow, SpotLight, PointLightShadow, PointLight, OrthographicCamera, DirectionalLightShadow, DirectionalLight, AmbientLight, LoaderUtils, _errorMap, ImageBitmapLoader, fov, aspect, CubeCamera, ArrayCamera, _RESERVED_CHARS_RE, _reservedRe, _wordChar, _wordCharOrDot, _directoryRe, _nodeRe, _objectRe, _propertyRe, _trackRe, _supportedObjectNames, Composite, PropertyBinding, _controlInterpolantsResultBuffer, Spherical, GridHelper, AxesHelper, Controls;
 var init_three_core = __esm({
   "node_modules/three/build/three.core.js"() {
     REVISION = "183";
+    MOUSE = { LEFT: 0, MIDDLE: 1, RIGHT: 2, ROTATE: 0, DOLLY: 1, PAN: 2 };
+    TOUCH = { ROTATE: 0, PAN: 1, DOLLY_PAN: 2, DOLLY_ROTATE: 3 };
     CullFaceNone = 0;
     CullFaceBack = 1;
     CullFaceFront = 2;
@@ -14449,94 +14451,6 @@ var init_three_core = __esm({
         return new _PlaneGeometry(data.width, data.height, data.widthSegments, data.heightSegments);
       }
     };
-    SphereGeometry = class _SphereGeometry extends BufferGeometry {
-      /**
-       * Constructs a new sphere geometry.
-       *
-       * @param {number} [radius=1] - The sphere radius.
-       * @param {number} [widthSegments=32] - The number of horizontal segments. Minimum value is `3`.
-       * @param {number} [heightSegments=16] - The number of vertical segments. Minimum value is `2`.
-       * @param {number} [phiStart=0] - The horizontal starting angle in radians.
-       * @param {number} [phiLength=Math.PI*2] - The horizontal sweep angle size.
-       * @param {number} [thetaStart=0] - The vertical starting angle in radians.
-       * @param {number} [thetaLength=Math.PI] - The vertical sweep angle size.
-       */
-      constructor(radius = 1, widthSegments = 32, heightSegments = 16, phiStart = 0, phiLength = Math.PI * 2, thetaStart = 0, thetaLength = Math.PI) {
-        super();
-        this.type = "SphereGeometry";
-        this.parameters = {
-          radius,
-          widthSegments,
-          heightSegments,
-          phiStart,
-          phiLength,
-          thetaStart,
-          thetaLength
-        };
-        widthSegments = Math.max(3, Math.floor(widthSegments));
-        heightSegments = Math.max(2, Math.floor(heightSegments));
-        const thetaEnd = Math.min(thetaStart + thetaLength, Math.PI);
-        let index = 0;
-        const grid = [];
-        const vertex2 = new Vector3();
-        const normal = new Vector3();
-        const indices = [];
-        const vertices = [];
-        const normals = [];
-        const uvs = [];
-        for (let iy = 0; iy <= heightSegments; iy++) {
-          const verticesRow = [];
-          const v = iy / heightSegments;
-          let uOffset = 0;
-          if (iy === 0 && thetaStart === 0) {
-            uOffset = 0.5 / widthSegments;
-          } else if (iy === heightSegments && thetaEnd === Math.PI) {
-            uOffset = -0.5 / widthSegments;
-          }
-          for (let ix = 0; ix <= widthSegments; ix++) {
-            const u = ix / widthSegments;
-            vertex2.x = -radius * Math.cos(phiStart + u * phiLength) * Math.sin(thetaStart + v * thetaLength);
-            vertex2.y = radius * Math.cos(thetaStart + v * thetaLength);
-            vertex2.z = radius * Math.sin(phiStart + u * phiLength) * Math.sin(thetaStart + v * thetaLength);
-            vertices.push(vertex2.x, vertex2.y, vertex2.z);
-            normal.copy(vertex2).normalize();
-            normals.push(normal.x, normal.y, normal.z);
-            uvs.push(u + uOffset, 1 - v);
-            verticesRow.push(index++);
-          }
-          grid.push(verticesRow);
-        }
-        for (let iy = 0; iy < heightSegments; iy++) {
-          for (let ix = 0; ix < widthSegments; ix++) {
-            const a = grid[iy][ix + 1];
-            const b = grid[iy][ix];
-            const c = grid[iy + 1][ix];
-            const d = grid[iy + 1][ix + 1];
-            if (iy !== 0 || thetaStart > 0) indices.push(a, b, d);
-            if (iy !== heightSegments - 1 || thetaEnd < Math.PI) indices.push(b, c, d);
-          }
-        }
-        this.setIndex(indices);
-        this.setAttribute("position", new Float32BufferAttribute(vertices, 3));
-        this.setAttribute("normal", new Float32BufferAttribute(normals, 3));
-        this.setAttribute("uv", new Float32BufferAttribute(uvs, 2));
-      }
-      copy(source) {
-        super.copy(source);
-        this.parameters = Object.assign({}, source.parameters);
-        return this;
-      }
-      /**
-       * Factory method for creating an instance of this class from the given
-       * JSON object.
-       *
-       * @param {Object} data - A JSON object representing the serialized geometry.
-       * @return {SphereGeometry} A new instance.
-       */
-      static fromJSON(data) {
-        return new _SphereGeometry(data.radius, data.widthSegments, data.heightSegments, data.phiStart, data.phiLength, data.thetaStart, data.thetaLength);
-      }
-    };
     UniformsUtils = { clone: cloneUniforms, merge: mergeUniforms };
     default_vertex = "void main() {\n	gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\n}";
     default_fragment = "void main() {\n	gl_FragColor = vec4( 1.0, 0.0, 0.0, 1.0 );\n}";
@@ -18227,67 +18141,274 @@ var init_three_core = __esm({
       ]
     ];
     _controlInterpolantsResultBuffer = new Float32Array(1);
-    Clock = class {
+    Spherical = class {
       /**
-       * Constructs a new clock.
+       * Constructs a new spherical.
        *
-       * @deprecated since 183.
-       * @param {boolean} [autoStart=true] - Whether to automatically start the clock when
-       * `getDelta()` is called for the first time.
+       * @param {number} [radius=1] - The radius, or the Euclidean distance (straight-line distance) from the point to the origin.
+       * @param {number} [phi=0] - The polar angle in radians from the y (up) axis.
+       * @param {number} [theta=0] - The equator/azimuthal angle in radians around the y (up) axis.
        */
-      constructor(autoStart = true) {
-        this.autoStart = autoStart;
-        this.startTime = 0;
-        this.oldTime = 0;
-        this.elapsedTime = 0;
-        this.running = false;
-        warn("THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.");
+      constructor(radius = 1, phi = 0, theta = 0) {
+        this.radius = radius;
+        this.phi = phi;
+        this.theta = theta;
       }
       /**
-       * Starts the clock. When `autoStart` is set to `true`, the method is automatically
-       * called by the class.
-       */
-      start() {
-        this.startTime = performance.now();
-        this.oldTime = this.startTime;
-        this.elapsedTime = 0;
-        this.running = true;
-      }
-      /**
-       * Stops the clock.
-       */
-      stop() {
-        this.getElapsedTime();
-        this.running = false;
-        this.autoStart = false;
-      }
-      /**
-       * Returns the elapsed time in seconds.
+       * Sets the spherical components by copying the given values.
        *
-       * @return {number} The elapsed time.
+       * @param {number} radius - The radius.
+       * @param {number} phi - The polar angle.
+       * @param {number} theta - The azimuthal angle.
+       * @return {Spherical} A reference to this spherical.
        */
-      getElapsedTime() {
-        this.getDelta();
-        return this.elapsedTime;
+      set(radius, phi, theta) {
+        this.radius = radius;
+        this.phi = phi;
+        this.theta = theta;
+        return this;
       }
       /**
-       * Returns the delta time in seconds.
+       * Copies the values of the given spherical to this instance.
        *
-       * @return {number} The delta time.
+       * @param {Spherical} other - The spherical to copy.
+       * @return {Spherical} A reference to this spherical.
        */
-      getDelta() {
-        let diff = 0;
-        if (this.autoStart && !this.running) {
-          this.start();
-          return 0;
+      copy(other) {
+        this.radius = other.radius;
+        this.phi = other.phi;
+        this.theta = other.theta;
+        return this;
+      }
+      /**
+       * Restricts the polar angle [page:.phi phi] to be between `0.000001` and pi -
+       * `0.000001`.
+       *
+       * @return {Spherical} A reference to this spherical.
+       */
+      makeSafe() {
+        const EPS = 1e-6;
+        this.phi = clamp(this.phi, EPS, Math.PI - EPS);
+        return this;
+      }
+      /**
+       * Sets the spherical components from the given vector which is assumed to hold
+       * Cartesian coordinates.
+       *
+       * @param {Vector3} v - The vector to set.
+       * @return {Spherical} A reference to this spherical.
+       */
+      setFromVector3(v) {
+        return this.setFromCartesianCoords(v.x, v.y, v.z);
+      }
+      /**
+       * Sets the spherical components from the given Cartesian coordinates.
+       *
+       * @param {number} x - The x value.
+       * @param {number} y - The y value.
+       * @param {number} z - The z value.
+       * @return {Spherical} A reference to this spherical.
+       */
+      setFromCartesianCoords(x, y, z) {
+        this.radius = Math.sqrt(x * x + y * y + z * z);
+        if (this.radius === 0) {
+          this.theta = 0;
+          this.phi = 0;
+        } else {
+          this.theta = Math.atan2(x, z);
+          this.phi = Math.acos(clamp(y / this.radius, -1, 1));
         }
-        if (this.running) {
-          const newTime = performance.now();
-          diff = (newTime - this.oldTime) / 1e3;
-          this.oldTime = newTime;
-          this.elapsedTime += diff;
+        return this;
+      }
+      /**
+       * Returns a new spherical with copied values from this instance.
+       *
+       * @return {Spherical} A clone of this instance.
+       */
+      clone() {
+        return new this.constructor().copy(this);
+      }
+    };
+    GridHelper = class extends LineSegments {
+      /**
+       * Constructs a new grid helper.
+       *
+       * @param {number} [size=10] - The size of the grid.
+       * @param {number} [divisions=10] - The number of divisions across the grid.
+       * @param {number|Color|string} [color1=0x444444] - The color of the center line.
+       * @param {number|Color|string} [color2=0x888888] - The color of the lines of the grid.
+       */
+      constructor(size = 10, divisions = 10, color1 = 4473924, color2 = 8947848) {
+        color1 = new Color(color1);
+        color2 = new Color(color2);
+        const center = divisions / 2;
+        const step = size / divisions;
+        const halfSize = size / 2;
+        const vertices = [], colors = [];
+        for (let i = 0, j = 0, k = -halfSize; i <= divisions; i++, k += step) {
+          vertices.push(-halfSize, 0, k, halfSize, 0, k);
+          vertices.push(k, 0, -halfSize, k, 0, halfSize);
+          const color = i === center ? color1 : color2;
+          color.toArray(colors, j);
+          j += 3;
+          color.toArray(colors, j);
+          j += 3;
+          color.toArray(colors, j);
+          j += 3;
+          color.toArray(colors, j);
+          j += 3;
         }
-        return diff;
+        const geometry = new BufferGeometry();
+        geometry.setAttribute("position", new Float32BufferAttribute(vertices, 3));
+        geometry.setAttribute("color", new Float32BufferAttribute(colors, 3));
+        const material = new LineBasicMaterial({ vertexColors: true, toneMapped: false });
+        super(geometry, material);
+        this.type = "GridHelper";
+      }
+      /**
+       * Frees the GPU-related resources allocated by this instance. Call this
+       * method whenever this instance is no longer used in your app.
+       */
+      dispose() {
+        this.geometry.dispose();
+        this.material.dispose();
+      }
+    };
+    AxesHelper = class extends LineSegments {
+      /**
+       * Constructs a new axes helper.
+       *
+       * @param {number} [size=1] - Size of the lines representing the axes.
+       */
+      constructor(size = 1) {
+        const vertices = [
+          0,
+          0,
+          0,
+          size,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          size,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          size
+        ];
+        const colors = [
+          1,
+          0,
+          0,
+          1,
+          0.6,
+          0,
+          0,
+          1,
+          0,
+          0.6,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.6,
+          1
+        ];
+        const geometry = new BufferGeometry();
+        geometry.setAttribute("position", new Float32BufferAttribute(vertices, 3));
+        geometry.setAttribute("color", new Float32BufferAttribute(colors, 3));
+        const material = new LineBasicMaterial({ vertexColors: true, toneMapped: false });
+        super(geometry, material);
+        this.type = "AxesHelper";
+      }
+      /**
+       * Defines the colors of the axes helper.
+       *
+       * @param {number|Color|string} xAxisColor - The color for the x axis.
+       * @param {number|Color|string} yAxisColor - The color for the y axis.
+       * @param {number|Color|string} zAxisColor - The color for the z axis.
+       * @return {AxesHelper} A reference to this axes helper.
+       */
+      setColors(xAxisColor, yAxisColor, zAxisColor) {
+        const color = new Color();
+        const array = this.geometry.attributes.color.array;
+        color.set(xAxisColor);
+        color.toArray(array, 0);
+        color.toArray(array, 3);
+        color.set(yAxisColor);
+        color.toArray(array, 6);
+        color.toArray(array, 9);
+        color.set(zAxisColor);
+        color.toArray(array, 12);
+        color.toArray(array, 15);
+        this.geometry.attributes.color.needsUpdate = true;
+        return this;
+      }
+      /**
+       * Frees the GPU-related resources allocated by this instance. Call this
+       * method whenever this instance is no longer used in your app.
+       */
+      dispose() {
+        this.geometry.dispose();
+        this.material.dispose();
+      }
+    };
+    Controls = class extends EventDispatcher {
+      /**
+       * Constructs a new controls instance.
+       *
+       * @param {Object3D} object - The object that is managed by the controls.
+       * @param {?HTMLElement} domElement - The HTML element used for event listeners.
+       */
+      constructor(object, domElement = null) {
+        super();
+        this.object = object;
+        this.domElement = domElement;
+        this.enabled = true;
+        this.state = -1;
+        this.keys = {};
+        this.mouseButtons = { LEFT: null, MIDDLE: null, RIGHT: null };
+        this.touches = { ONE: null, TWO: null };
+      }
+      /**
+       * Connects the controls to the DOM. This method has so called "side effects" since
+       * it adds the module's event listeners to the DOM.
+       *
+       * @param {HTMLElement} element - The DOM element to connect to.
+       */
+      connect(element) {
+        if (element === void 0) {
+          warn("Controls: connect() now requires an element.");
+          return;
+        }
+        if (this.domElement !== null) this.disconnect();
+        this.domElement = element;
+      }
+      /**
+       * Disconnects the controls from the DOM.
+       */
+      disconnect() {
+      }
+      /**
+       * Call this method if you no longer want use to the controls. It frees all internal
+       * resources and removes all event listeners.
+       */
+      dispose() {
+      }
+      /**
+       * Controls should implement this method if they have to update their internal state
+       * per simulation step.
+       *
+       * @param {number} [delta] - The time delta in seconds.
+       */
+      update() {
       }
     };
     if (typeof __THREE_DEVTOOLS__ !== "undefined") {
@@ -32231,399 +32352,993 @@ var init_GLTFLoader = __esm({
   }
 });
 
-// src/main.js
-var require_main = __commonJS({
-  "src/main.js"() {
+// node_modules/three/examples/jsm/controls/OrbitControls.js
+function onPointerDown(event) {
+  if (this.enabled === false) return;
+  if (this._pointers.length === 0) {
+    this.domElement.setPointerCapture(event.pointerId);
+    this.domElement.ownerDocument.addEventListener("pointermove", this._onPointerMove);
+    this.domElement.ownerDocument.addEventListener("pointerup", this._onPointerUp);
+  }
+  if (this._isTrackingPointer(event)) return;
+  this._addPointer(event);
+  if (event.pointerType === "touch") {
+    this._onTouchStart(event);
+  } else {
+    this._onMouseDown(event);
+  }
+  if (this._cursorStyle === "grab") {
+    this.domElement.style.cursor = "grabbing";
+  }
+}
+function onPointerMove(event) {
+  if (this.enabled === false) return;
+  if (event.pointerType === "touch") {
+    this._onTouchMove(event);
+  } else {
+    this._onMouseMove(event);
+  }
+}
+function onPointerUp(event) {
+  this._removePointer(event);
+  switch (this._pointers.length) {
+    case 0:
+      this.domElement.releasePointerCapture(event.pointerId);
+      this.domElement.ownerDocument.removeEventListener("pointermove", this._onPointerMove);
+      this.domElement.ownerDocument.removeEventListener("pointerup", this._onPointerUp);
+      this.dispatchEvent(_endEvent);
+      this.state = _STATE.NONE;
+      if (this._cursorStyle === "grab") {
+        this.domElement.style.cursor = "grab";
+      }
+      break;
+    case 1:
+      const pointerId = this._pointers[0];
+      const position = this._pointerPositions[pointerId];
+      this._onTouchStart({ pointerId, pageX: position.x, pageY: position.y });
+      break;
+  }
+}
+function onMouseDown(event) {
+  let mouseAction;
+  switch (event.button) {
+    case 0:
+      mouseAction = this.mouseButtons.LEFT;
+      break;
+    case 1:
+      mouseAction = this.mouseButtons.MIDDLE;
+      break;
+    case 2:
+      mouseAction = this.mouseButtons.RIGHT;
+      break;
+    default:
+      mouseAction = -1;
+  }
+  switch (mouseAction) {
+    case MOUSE.DOLLY:
+      if (this.enableZoom === false) return;
+      this._handleMouseDownDolly(event);
+      this.state = _STATE.DOLLY;
+      break;
+    case MOUSE.ROTATE:
+      if (event.ctrlKey || event.metaKey || event.shiftKey) {
+        if (this.enablePan === false) return;
+        this._handleMouseDownPan(event);
+        this.state = _STATE.PAN;
+      } else {
+        if (this.enableRotate === false) return;
+        this._handleMouseDownRotate(event);
+        this.state = _STATE.ROTATE;
+      }
+      break;
+    case MOUSE.PAN:
+      if (event.ctrlKey || event.metaKey || event.shiftKey) {
+        if (this.enableRotate === false) return;
+        this._handleMouseDownRotate(event);
+        this.state = _STATE.ROTATE;
+      } else {
+        if (this.enablePan === false) return;
+        this._handleMouseDownPan(event);
+        this.state = _STATE.PAN;
+      }
+      break;
+    default:
+      this.state = _STATE.NONE;
+  }
+  if (this.state !== _STATE.NONE) {
+    this.dispatchEvent(_startEvent);
+  }
+}
+function onMouseMove(event) {
+  switch (this.state) {
+    case _STATE.ROTATE:
+      if (this.enableRotate === false) return;
+      this._handleMouseMoveRotate(event);
+      break;
+    case _STATE.DOLLY:
+      if (this.enableZoom === false) return;
+      this._handleMouseMoveDolly(event);
+      break;
+    case _STATE.PAN:
+      if (this.enablePan === false) return;
+      this._handleMouseMovePan(event);
+      break;
+  }
+}
+function onMouseWheel(event) {
+  if (this.enabled === false || this.enableZoom === false || this.state !== _STATE.NONE) return;
+  event.preventDefault();
+  this.dispatchEvent(_startEvent);
+  this._handleMouseWheel(this._customWheelEvent(event));
+  this.dispatchEvent(_endEvent);
+}
+function onKeyDown(event) {
+  if (this.enabled === false) return;
+  this._handleKeyDown(event);
+}
+function onTouchStart(event) {
+  this._trackPointer(event);
+  switch (this._pointers.length) {
+    case 1:
+      switch (this.touches.ONE) {
+        case TOUCH.ROTATE:
+          if (this.enableRotate === false) return;
+          this._handleTouchStartRotate(event);
+          this.state = _STATE.TOUCH_ROTATE;
+          break;
+        case TOUCH.PAN:
+          if (this.enablePan === false) return;
+          this._handleTouchStartPan(event);
+          this.state = _STATE.TOUCH_PAN;
+          break;
+        default:
+          this.state = _STATE.NONE;
+      }
+      break;
+    case 2:
+      switch (this.touches.TWO) {
+        case TOUCH.DOLLY_PAN:
+          if (this.enableZoom === false && this.enablePan === false) return;
+          this._handleTouchStartDollyPan(event);
+          this.state = _STATE.TOUCH_DOLLY_PAN;
+          break;
+        case TOUCH.DOLLY_ROTATE:
+          if (this.enableZoom === false && this.enableRotate === false) return;
+          this._handleTouchStartDollyRotate(event);
+          this.state = _STATE.TOUCH_DOLLY_ROTATE;
+          break;
+        default:
+          this.state = _STATE.NONE;
+      }
+      break;
+    default:
+      this.state = _STATE.NONE;
+  }
+  if (this.state !== _STATE.NONE) {
+    this.dispatchEvent(_startEvent);
+  }
+}
+function onTouchMove(event) {
+  this._trackPointer(event);
+  switch (this.state) {
+    case _STATE.TOUCH_ROTATE:
+      if (this.enableRotate === false) return;
+      this._handleTouchMoveRotate(event);
+      this.update();
+      break;
+    case _STATE.TOUCH_PAN:
+      if (this.enablePan === false) return;
+      this._handleTouchMovePan(event);
+      this.update();
+      break;
+    case _STATE.TOUCH_DOLLY_PAN:
+      if (this.enableZoom === false && this.enablePan === false) return;
+      this._handleTouchMoveDollyPan(event);
+      this.update();
+      break;
+    case _STATE.TOUCH_DOLLY_ROTATE:
+      if (this.enableZoom === false && this.enableRotate === false) return;
+      this._handleTouchMoveDollyRotate(event);
+      this.update();
+      break;
+    default:
+      this.state = _STATE.NONE;
+  }
+}
+function onContextMenu(event) {
+  if (this.enabled === false) return;
+  event.preventDefault();
+}
+function interceptControlDown(event) {
+  if (event.key === "Control") {
+    this._controlActive = true;
+    const document2 = this.domElement.getRootNode();
+    document2.addEventListener("keyup", this._interceptControlUp, { passive: true, capture: true });
+  }
+}
+function interceptControlUp(event) {
+  if (event.key === "Control") {
+    this._controlActive = false;
+    const document2 = this.domElement.getRootNode();
+    document2.removeEventListener("keyup", this._interceptControlUp, { passive: true, capture: true });
+  }
+}
+var _changeEvent, _startEvent, _endEvent, _ray2, _plane, _TILT_LIMIT, _v, _twoPI, _STATE, _EPS, OrbitControls;
+var init_OrbitControls = __esm({
+  "node_modules/three/examples/jsm/controls/OrbitControls.js"() {
+    init_three_module();
+    _changeEvent = { type: "change" };
+    _startEvent = { type: "start" };
+    _endEvent = { type: "end" };
+    _ray2 = new Ray();
+    _plane = new Plane();
+    _TILT_LIMIT = Math.cos(70 * MathUtils.DEG2RAD);
+    _v = new Vector3();
+    _twoPI = 2 * Math.PI;
+    _STATE = {
+      NONE: -1,
+      ROTATE: 0,
+      DOLLY: 1,
+      PAN: 2,
+      TOUCH_ROTATE: 3,
+      TOUCH_PAN: 4,
+      TOUCH_DOLLY_PAN: 5,
+      TOUCH_DOLLY_ROTATE: 6
+    };
+    _EPS = 1e-6;
+    OrbitControls = class extends Controls {
+      /**
+       * Constructs a new controls instance.
+       *
+       * @param {Object3D} object - The object that is managed by the controls.
+       * @param {?HTMLElement} domElement - The HTML element used for event listeners.
+       */
+      constructor(object, domElement = null) {
+        super(object, domElement);
+        this.state = _STATE.NONE;
+        this.target = new Vector3();
+        this.cursor = new Vector3();
+        this.minDistance = 0;
+        this.maxDistance = Infinity;
+        this.minZoom = 0;
+        this.maxZoom = Infinity;
+        this.minTargetRadius = 0;
+        this.maxTargetRadius = Infinity;
+        this.minPolarAngle = 0;
+        this.maxPolarAngle = Math.PI;
+        this.minAzimuthAngle = -Infinity;
+        this.maxAzimuthAngle = Infinity;
+        this.enableDamping = false;
+        this.dampingFactor = 0.05;
+        this.enableZoom = true;
+        this.zoomSpeed = 1;
+        this.enableRotate = true;
+        this.rotateSpeed = 1;
+        this.keyRotateSpeed = 1;
+        this.enablePan = true;
+        this.panSpeed = 1;
+        this.screenSpacePanning = true;
+        this.keyPanSpeed = 7;
+        this.zoomToCursor = false;
+        this.autoRotate = false;
+        this.autoRotateSpeed = 2;
+        this.keys = { LEFT: "ArrowLeft", UP: "ArrowUp", RIGHT: "ArrowRight", BOTTOM: "ArrowDown" };
+        this.mouseButtons = { LEFT: MOUSE.ROTATE, MIDDLE: MOUSE.DOLLY, RIGHT: MOUSE.PAN };
+        this.touches = { ONE: TOUCH.ROTATE, TWO: TOUCH.DOLLY_PAN };
+        this.target0 = this.target.clone();
+        this.position0 = this.object.position.clone();
+        this.zoom0 = this.object.zoom;
+        this._cursorStyle = "auto";
+        this._domElementKeyEvents = null;
+        this._lastPosition = new Vector3();
+        this._lastQuaternion = new Quaternion();
+        this._lastTargetPosition = new Vector3();
+        this._quat = new Quaternion().setFromUnitVectors(object.up, new Vector3(0, 1, 0));
+        this._quatInverse = this._quat.clone().invert();
+        this._spherical = new Spherical();
+        this._sphericalDelta = new Spherical();
+        this._scale = 1;
+        this._panOffset = new Vector3();
+        this._rotateStart = new Vector2();
+        this._rotateEnd = new Vector2();
+        this._rotateDelta = new Vector2();
+        this._panStart = new Vector2();
+        this._panEnd = new Vector2();
+        this._panDelta = new Vector2();
+        this._dollyStart = new Vector2();
+        this._dollyEnd = new Vector2();
+        this._dollyDelta = new Vector2();
+        this._dollyDirection = new Vector3();
+        this._mouse = new Vector2();
+        this._performCursorZoom = false;
+        this._pointers = [];
+        this._pointerPositions = {};
+        this._controlActive = false;
+        this._onPointerMove = onPointerMove.bind(this);
+        this._onPointerDown = onPointerDown.bind(this);
+        this._onPointerUp = onPointerUp.bind(this);
+        this._onContextMenu = onContextMenu.bind(this);
+        this._onMouseWheel = onMouseWheel.bind(this);
+        this._onKeyDown = onKeyDown.bind(this);
+        this._onTouchStart = onTouchStart.bind(this);
+        this._onTouchMove = onTouchMove.bind(this);
+        this._onMouseDown = onMouseDown.bind(this);
+        this._onMouseMove = onMouseMove.bind(this);
+        this._interceptControlDown = interceptControlDown.bind(this);
+        this._interceptControlUp = interceptControlUp.bind(this);
+        if (this.domElement !== null) {
+          this.connect(this.domElement);
+        }
+        this.update();
+      }
+      /**
+       * Defines the visual representation of the cursor.
+       *
+       * @type {('auto'|'grab')}
+       * @default 'auto'
+       */
+      set cursorStyle(type) {
+        this._cursorStyle = type;
+        if (type === "grab") {
+          this.domElement.style.cursor = "grab";
+        } else {
+          this.domElement.style.cursor = "auto";
+        }
+      }
+      get cursorStyle() {
+        return this._cursorStyle;
+      }
+      connect(element) {
+        super.connect(element);
+        this.domElement.addEventListener("pointerdown", this._onPointerDown);
+        this.domElement.addEventListener("pointercancel", this._onPointerUp);
+        this.domElement.addEventListener("contextmenu", this._onContextMenu);
+        this.domElement.addEventListener("wheel", this._onMouseWheel, { passive: false });
+        const document2 = this.domElement.getRootNode();
+        document2.addEventListener("keydown", this._interceptControlDown, { passive: true, capture: true });
+        this.domElement.style.touchAction = "none";
+      }
+      disconnect() {
+        this.domElement.removeEventListener("pointerdown", this._onPointerDown);
+        this.domElement.ownerDocument.removeEventListener("pointermove", this._onPointerMove);
+        this.domElement.ownerDocument.removeEventListener("pointerup", this._onPointerUp);
+        this.domElement.removeEventListener("pointercancel", this._onPointerUp);
+        this.domElement.removeEventListener("wheel", this._onMouseWheel);
+        this.domElement.removeEventListener("contextmenu", this._onContextMenu);
+        this.stopListenToKeyEvents();
+        const document2 = this.domElement.getRootNode();
+        document2.removeEventListener("keydown", this._interceptControlDown, { capture: true });
+        this.domElement.style.touchAction = "auto";
+      }
+      dispose() {
+        this.disconnect();
+      }
+      /**
+       * Get the current vertical rotation, in radians.
+       *
+       * @return {number} The current vertical rotation, in radians.
+       */
+      getPolarAngle() {
+        return this._spherical.phi;
+      }
+      /**
+       * Get the current horizontal rotation, in radians.
+       *
+       * @return {number} The current horizontal rotation, in radians.
+       */
+      getAzimuthalAngle() {
+        return this._spherical.theta;
+      }
+      /**
+       * Returns the distance from the camera to the target.
+       *
+       * @return {number} The distance from the camera to the target.
+       */
+      getDistance() {
+        return this.object.position.distanceTo(this.target);
+      }
+      /**
+       * Adds key event listeners to the given DOM element.
+       * `window` is a recommended argument for using this method.
+       *
+       * @param {HTMLElement} domElement - The DOM element
+       */
+      listenToKeyEvents(domElement) {
+        domElement.addEventListener("keydown", this._onKeyDown);
+        this._domElementKeyEvents = domElement;
+      }
+      /**
+       * Removes the key event listener previously defined with `listenToKeyEvents()`.
+       */
+      stopListenToKeyEvents() {
+        if (this._domElementKeyEvents !== null) {
+          this._domElementKeyEvents.removeEventListener("keydown", this._onKeyDown);
+          this._domElementKeyEvents = null;
+        }
+      }
+      /**
+       * Save the current state of the controls. This can later be recovered with `reset()`.
+       */
+      saveState() {
+        this.target0.copy(this.target);
+        this.position0.copy(this.object.position);
+        this.zoom0 = this.object.zoom;
+      }
+      /**
+       * Reset the controls to their state from either the last time the `saveState()`
+       * was called, or the initial state.
+       */
+      reset() {
+        this.target.copy(this.target0);
+        this.object.position.copy(this.position0);
+        this.object.zoom = this.zoom0;
+        this.object.updateProjectionMatrix();
+        this.dispatchEvent(_changeEvent);
+        this.update();
+        this.state = _STATE.NONE;
+      }
+      /**
+       * Programmatically pan the camera.
+       *
+       * @param {number} deltaX - The horizontal pan amount in pixels.
+       * @param {number} deltaY - The vertical pan amount in pixels.
+       */
+      pan(deltaX, deltaY) {
+        this._pan(deltaX, deltaY);
+        this.update();
+      }
+      /**
+       * Programmatically dolly in (zoom in for perspective camera).
+       *
+       * @param {number} dollyScale - The dolly scale factor.
+       */
+      dollyIn(dollyScale) {
+        this._dollyIn(dollyScale);
+        this.update();
+      }
+      /**
+       * Programmatically dolly out (zoom out for perspective camera).
+       *
+       * @param {number} dollyScale - The dolly scale factor.
+       */
+      dollyOut(dollyScale) {
+        this._dollyOut(dollyScale);
+        this.update();
+      }
+      /**
+       * Programmatically rotate the camera left (around the vertical axis).
+       *
+       * @param {number} angle - The rotation angle in radians.
+       */
+      rotateLeft(angle) {
+        this._rotateLeft(angle);
+        this.update();
+      }
+      /**
+       * Programmatically rotate the camera up (around the horizontal axis).
+       *
+       * @param {number} angle - The rotation angle in radians.
+       */
+      rotateUp(angle) {
+        this._rotateUp(angle);
+        this.update();
+      }
+      update(deltaTime = null) {
+        const position = this.object.position;
+        _v.copy(position).sub(this.target);
+        _v.applyQuaternion(this._quat);
+        this._spherical.setFromVector3(_v);
+        if (this.autoRotate && this.state === _STATE.NONE) {
+          this._rotateLeft(this._getAutoRotationAngle(deltaTime));
+        }
+        if (this.enableDamping) {
+          this._spherical.theta += this._sphericalDelta.theta * this.dampingFactor;
+          this._spherical.phi += this._sphericalDelta.phi * this.dampingFactor;
+        } else {
+          this._spherical.theta += this._sphericalDelta.theta;
+          this._spherical.phi += this._sphericalDelta.phi;
+        }
+        let min = this.minAzimuthAngle;
+        let max = this.maxAzimuthAngle;
+        if (isFinite(min) && isFinite(max)) {
+          if (min < -Math.PI) min += _twoPI;
+          else if (min > Math.PI) min -= _twoPI;
+          if (max < -Math.PI) max += _twoPI;
+          else if (max > Math.PI) max -= _twoPI;
+          if (min <= max) {
+            this._spherical.theta = Math.max(min, Math.min(max, this._spherical.theta));
+          } else {
+            this._spherical.theta = this._spherical.theta > (min + max) / 2 ? Math.max(min, this._spherical.theta) : Math.min(max, this._spherical.theta);
+          }
+        }
+        this._spherical.phi = Math.max(this.minPolarAngle, Math.min(this.maxPolarAngle, this._spherical.phi));
+        this._spherical.makeSafe();
+        if (this.enableDamping === true) {
+          this.target.addScaledVector(this._panOffset, this.dampingFactor);
+        } else {
+          this.target.add(this._panOffset);
+        }
+        this.target.sub(this.cursor);
+        this.target.clampLength(this.minTargetRadius, this.maxTargetRadius);
+        this.target.add(this.cursor);
+        let zoomChanged = false;
+        if (this.zoomToCursor && this._performCursorZoom || this.object.isOrthographicCamera) {
+          this._spherical.radius = this._clampDistance(this._spherical.radius);
+        } else {
+          const prevRadius = this._spherical.radius;
+          this._spherical.radius = this._clampDistance(this._spherical.radius * this._scale);
+          zoomChanged = prevRadius != this._spherical.radius;
+        }
+        _v.setFromSpherical(this._spherical);
+        _v.applyQuaternion(this._quatInverse);
+        position.copy(this.target).add(_v);
+        this.object.lookAt(this.target);
+        if (this.enableDamping === true) {
+          this._sphericalDelta.theta *= 1 - this.dampingFactor;
+          this._sphericalDelta.phi *= 1 - this.dampingFactor;
+          this._panOffset.multiplyScalar(1 - this.dampingFactor);
+        } else {
+          this._sphericalDelta.set(0, 0, 0);
+          this._panOffset.set(0, 0, 0);
+        }
+        if (this.zoomToCursor && this._performCursorZoom) {
+          let newRadius = null;
+          if (this.object.isPerspectiveCamera) {
+            const prevRadius = _v.length();
+            newRadius = this._clampDistance(prevRadius * this._scale);
+            const radiusDelta = prevRadius - newRadius;
+            this.object.position.addScaledVector(this._dollyDirection, radiusDelta);
+            this.object.updateMatrixWorld();
+            zoomChanged = !!radiusDelta;
+          } else if (this.object.isOrthographicCamera) {
+            const mouseBefore = new Vector3(this._mouse.x, this._mouse.y, 0);
+            mouseBefore.unproject(this.object);
+            const prevZoom = this.object.zoom;
+            this.object.zoom = Math.max(this.minZoom, Math.min(this.maxZoom, this.object.zoom / this._scale));
+            this.object.updateProjectionMatrix();
+            zoomChanged = prevZoom !== this.object.zoom;
+            const mouseAfter = new Vector3(this._mouse.x, this._mouse.y, 0);
+            mouseAfter.unproject(this.object);
+            this.object.position.sub(mouseAfter).add(mouseBefore);
+            this.object.updateMatrixWorld();
+            newRadius = _v.length();
+          } else {
+            console.warn("WARNING: OrbitControls.js encountered an unknown camera type - zoom to cursor disabled.");
+            this.zoomToCursor = false;
+          }
+          if (newRadius !== null) {
+            if (this.screenSpacePanning) {
+              this.target.set(0, 0, -1).transformDirection(this.object.matrix).multiplyScalar(newRadius).add(this.object.position);
+            } else {
+              _ray2.origin.copy(this.object.position);
+              _ray2.direction.set(0, 0, -1).transformDirection(this.object.matrix);
+              if (Math.abs(this.object.up.dot(_ray2.direction)) < _TILT_LIMIT) {
+                this.object.lookAt(this.target);
+              } else {
+                _plane.setFromNormalAndCoplanarPoint(this.object.up, this.target);
+                _ray2.intersectPlane(_plane, this.target);
+              }
+            }
+          }
+        } else if (this.object.isOrthographicCamera) {
+          const prevZoom = this.object.zoom;
+          this.object.zoom = Math.max(this.minZoom, Math.min(this.maxZoom, this.object.zoom / this._scale));
+          if (prevZoom !== this.object.zoom) {
+            this.object.updateProjectionMatrix();
+            zoomChanged = true;
+          }
+        }
+        this._scale = 1;
+        this._performCursorZoom = false;
+        if (zoomChanged || this._lastPosition.distanceToSquared(this.object.position) > _EPS || 8 * (1 - this._lastQuaternion.dot(this.object.quaternion)) > _EPS || this._lastTargetPosition.distanceToSquared(this.target) > _EPS) {
+          this.dispatchEvent(_changeEvent);
+          this._lastPosition.copy(this.object.position);
+          this._lastQuaternion.copy(this.object.quaternion);
+          this._lastTargetPosition.copy(this.target);
+          return true;
+        }
+        return false;
+      }
+      _getAutoRotationAngle(deltaTime) {
+        if (deltaTime !== null) {
+          return _twoPI / 60 * this.autoRotateSpeed * deltaTime;
+        } else {
+          return _twoPI / 60 / 60 * this.autoRotateSpeed;
+        }
+      }
+      _getZoomScale(delta) {
+        const normalizedDelta = Math.abs(delta * 0.01);
+        return Math.pow(0.95, this.zoomSpeed * normalizedDelta);
+      }
+      _rotateLeft(angle) {
+        this._sphericalDelta.theta -= angle;
+      }
+      _rotateUp(angle) {
+        this._sphericalDelta.phi -= angle;
+      }
+      _panLeft(distance, objectMatrix) {
+        _v.setFromMatrixColumn(objectMatrix, 0);
+        _v.multiplyScalar(-distance);
+        this._panOffset.add(_v);
+      }
+      _panUp(distance, objectMatrix) {
+        if (this.screenSpacePanning === true) {
+          _v.setFromMatrixColumn(objectMatrix, 1);
+        } else {
+          _v.setFromMatrixColumn(objectMatrix, 0);
+          _v.crossVectors(this.object.up, _v);
+        }
+        _v.multiplyScalar(distance);
+        this._panOffset.add(_v);
+      }
+      // deltaX and deltaY are in pixels; right and down are positive
+      _pan(deltaX, deltaY) {
+        const element = this.domElement;
+        if (this.object.isPerspectiveCamera) {
+          const position = this.object.position;
+          _v.copy(position).sub(this.target);
+          let targetDistance = _v.length();
+          targetDistance *= Math.tan(this.object.fov / 2 * Math.PI / 180);
+          this._panLeft(2 * deltaX * targetDistance / element.clientHeight, this.object.matrix);
+          this._panUp(2 * deltaY * targetDistance / element.clientHeight, this.object.matrix);
+        } else if (this.object.isOrthographicCamera) {
+          this._panLeft(deltaX * (this.object.right - this.object.left) / this.object.zoom / element.clientWidth, this.object.matrix);
+          this._panUp(deltaY * (this.object.top - this.object.bottom) / this.object.zoom / element.clientHeight, this.object.matrix);
+        } else {
+          console.warn("WARNING: OrbitControls.js encountered an unknown camera type - pan disabled.");
+          this.enablePan = false;
+        }
+      }
+      _dollyOut(dollyScale) {
+        if (this.object.isPerspectiveCamera || this.object.isOrthographicCamera) {
+          this._scale /= dollyScale;
+        } else {
+          console.warn("WARNING: OrbitControls.js encountered an unknown camera type - dolly/zoom disabled.");
+          this.enableZoom = false;
+        }
+      }
+      _dollyIn(dollyScale) {
+        if (this.object.isPerspectiveCamera || this.object.isOrthographicCamera) {
+          this._scale *= dollyScale;
+        } else {
+          console.warn("WARNING: OrbitControls.js encountered an unknown camera type - dolly/zoom disabled.");
+          this.enableZoom = false;
+        }
+      }
+      _updateZoomParameters(x, y) {
+        if (!this.zoomToCursor) {
+          return;
+        }
+        this._performCursorZoom = true;
+        const rect = this.domElement.getBoundingClientRect();
+        const dx = x - rect.left;
+        const dy = y - rect.top;
+        const w = rect.width;
+        const h = rect.height;
+        this._mouse.x = dx / w * 2 - 1;
+        this._mouse.y = -(dy / h) * 2 + 1;
+        this._dollyDirection.set(this._mouse.x, this._mouse.y, 1).unproject(this.object).sub(this.object.position).normalize();
+      }
+      _clampDistance(dist) {
+        return Math.max(this.minDistance, Math.min(this.maxDistance, dist));
+      }
+      //
+      // event callbacks - update the object state
+      //
+      _handleMouseDownRotate(event) {
+        this._rotateStart.set(event.clientX, event.clientY);
+      }
+      _handleMouseDownDolly(event) {
+        this._updateZoomParameters(event.clientX, event.clientX);
+        this._dollyStart.set(event.clientX, event.clientY);
+      }
+      _handleMouseDownPan(event) {
+        this._panStart.set(event.clientX, event.clientY);
+      }
+      _handleMouseMoveRotate(event) {
+        this._rotateEnd.set(event.clientX, event.clientY);
+        this._rotateDelta.subVectors(this._rotateEnd, this._rotateStart).multiplyScalar(this.rotateSpeed);
+        const element = this.domElement;
+        this._rotateLeft(_twoPI * this._rotateDelta.x / element.clientHeight);
+        this._rotateUp(_twoPI * this._rotateDelta.y / element.clientHeight);
+        this._rotateStart.copy(this._rotateEnd);
+        this.update();
+      }
+      _handleMouseMoveDolly(event) {
+        this._dollyEnd.set(event.clientX, event.clientY);
+        this._dollyDelta.subVectors(this._dollyEnd, this._dollyStart);
+        if (this._dollyDelta.y > 0) {
+          this._dollyOut(this._getZoomScale(this._dollyDelta.y));
+        } else if (this._dollyDelta.y < 0) {
+          this._dollyIn(this._getZoomScale(this._dollyDelta.y));
+        }
+        this._dollyStart.copy(this._dollyEnd);
+        this.update();
+      }
+      _handleMouseMovePan(event) {
+        this._panEnd.set(event.clientX, event.clientY);
+        this._panDelta.subVectors(this._panEnd, this._panStart).multiplyScalar(this.panSpeed);
+        this._pan(this._panDelta.x, this._panDelta.y);
+        this._panStart.copy(this._panEnd);
+        this.update();
+      }
+      _handleMouseWheel(event) {
+        this._updateZoomParameters(event.clientX, event.clientY);
+        if (event.deltaY < 0) {
+          this._dollyIn(this._getZoomScale(event.deltaY));
+        } else if (event.deltaY > 0) {
+          this._dollyOut(this._getZoomScale(event.deltaY));
+        }
+        this.update();
+      }
+      _handleKeyDown(event) {
+        let needsUpdate = false;
+        switch (event.code) {
+          case this.keys.UP:
+            if (event.ctrlKey || event.metaKey || event.shiftKey) {
+              if (this.enableRotate) {
+                this._rotateUp(_twoPI * this.keyRotateSpeed / this.domElement.clientHeight);
+              }
+            } else {
+              if (this.enablePan) {
+                this._pan(0, this.keyPanSpeed);
+              }
+            }
+            needsUpdate = true;
+            break;
+          case this.keys.BOTTOM:
+            if (event.ctrlKey || event.metaKey || event.shiftKey) {
+              if (this.enableRotate) {
+                this._rotateUp(-_twoPI * this.keyRotateSpeed / this.domElement.clientHeight);
+              }
+            } else {
+              if (this.enablePan) {
+                this._pan(0, -this.keyPanSpeed);
+              }
+            }
+            needsUpdate = true;
+            break;
+          case this.keys.LEFT:
+            if (event.ctrlKey || event.metaKey || event.shiftKey) {
+              if (this.enableRotate) {
+                this._rotateLeft(_twoPI * this.keyRotateSpeed / this.domElement.clientHeight);
+              }
+            } else {
+              if (this.enablePan) {
+                this._pan(this.keyPanSpeed, 0);
+              }
+            }
+            needsUpdate = true;
+            break;
+          case this.keys.RIGHT:
+            if (event.ctrlKey || event.metaKey || event.shiftKey) {
+              if (this.enableRotate) {
+                this._rotateLeft(-_twoPI * this.keyRotateSpeed / this.domElement.clientHeight);
+              }
+            } else {
+              if (this.enablePan) {
+                this._pan(-this.keyPanSpeed, 0);
+              }
+            }
+            needsUpdate = true;
+            break;
+        }
+        if (needsUpdate) {
+          event.preventDefault();
+          this.update();
+        }
+      }
+      _handleTouchStartRotate(event) {
+        if (this._pointers.length === 1) {
+          this._rotateStart.set(event.pageX, event.pageY);
+        } else {
+          const position = this._getSecondPointerPosition(event);
+          const x = 0.5 * (event.pageX + position.x);
+          const y = 0.5 * (event.pageY + position.y);
+          this._rotateStart.set(x, y);
+        }
+      }
+      _handleTouchStartPan(event) {
+        if (this._pointers.length === 1) {
+          this._panStart.set(event.pageX, event.pageY);
+        } else {
+          const position = this._getSecondPointerPosition(event);
+          const x = 0.5 * (event.pageX + position.x);
+          const y = 0.5 * (event.pageY + position.y);
+          this._panStart.set(x, y);
+        }
+      }
+      _handleTouchStartDolly(event) {
+        const position = this._getSecondPointerPosition(event);
+        const dx = event.pageX - position.x;
+        const dy = event.pageY - position.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        this._dollyStart.set(0, distance);
+      }
+      _handleTouchStartDollyPan(event) {
+        if (this.enableZoom) this._handleTouchStartDolly(event);
+        if (this.enablePan) this._handleTouchStartPan(event);
+      }
+      _handleTouchStartDollyRotate(event) {
+        if (this.enableZoom) this._handleTouchStartDolly(event);
+        if (this.enableRotate) this._handleTouchStartRotate(event);
+      }
+      _handleTouchMoveRotate(event) {
+        if (this._pointers.length == 1) {
+          this._rotateEnd.set(event.pageX, event.pageY);
+        } else {
+          const position = this._getSecondPointerPosition(event);
+          const x = 0.5 * (event.pageX + position.x);
+          const y = 0.5 * (event.pageY + position.y);
+          this._rotateEnd.set(x, y);
+        }
+        this._rotateDelta.subVectors(this._rotateEnd, this._rotateStart).multiplyScalar(this.rotateSpeed);
+        const element = this.domElement;
+        this._rotateLeft(_twoPI * this._rotateDelta.x / element.clientHeight);
+        this._rotateUp(_twoPI * this._rotateDelta.y / element.clientHeight);
+        this._rotateStart.copy(this._rotateEnd);
+      }
+      _handleTouchMovePan(event) {
+        if (this._pointers.length === 1) {
+          this._panEnd.set(event.pageX, event.pageY);
+        } else {
+          const position = this._getSecondPointerPosition(event);
+          const x = 0.5 * (event.pageX + position.x);
+          const y = 0.5 * (event.pageY + position.y);
+          this._panEnd.set(x, y);
+        }
+        this._panDelta.subVectors(this._panEnd, this._panStart).multiplyScalar(this.panSpeed);
+        this._pan(this._panDelta.x, this._panDelta.y);
+        this._panStart.copy(this._panEnd);
+      }
+      _handleTouchMoveDolly(event) {
+        const position = this._getSecondPointerPosition(event);
+        const dx = event.pageX - position.x;
+        const dy = event.pageY - position.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        this._dollyEnd.set(0, distance);
+        this._dollyDelta.set(0, Math.pow(this._dollyEnd.y / this._dollyStart.y, this.zoomSpeed));
+        this._dollyOut(this._dollyDelta.y);
+        this._dollyStart.copy(this._dollyEnd);
+        const centerX = (event.pageX + position.x) * 0.5;
+        const centerY = (event.pageY + position.y) * 0.5;
+        this._updateZoomParameters(centerX, centerY);
+      }
+      _handleTouchMoveDollyPan(event) {
+        if (this.enableZoom) this._handleTouchMoveDolly(event);
+        if (this.enablePan) this._handleTouchMovePan(event);
+      }
+      _handleTouchMoveDollyRotate(event) {
+        if (this.enableZoom) this._handleTouchMoveDolly(event);
+        if (this.enableRotate) this._handleTouchMoveRotate(event);
+      }
+      // pointers
+      _addPointer(event) {
+        this._pointers.push(event.pointerId);
+      }
+      _removePointer(event) {
+        delete this._pointerPositions[event.pointerId];
+        for (let i = 0; i < this._pointers.length; i++) {
+          if (this._pointers[i] == event.pointerId) {
+            this._pointers.splice(i, 1);
+            return;
+          }
+        }
+      }
+      _isTrackingPointer(event) {
+        for (let i = 0; i < this._pointers.length; i++) {
+          if (this._pointers[i] == event.pointerId) return true;
+        }
+        return false;
+      }
+      _trackPointer(event) {
+        let position = this._pointerPositions[event.pointerId];
+        if (position === void 0) {
+          position = new Vector2();
+          this._pointerPositions[event.pointerId] = position;
+        }
+        position.set(event.pageX, event.pageY);
+      }
+      _getSecondPointerPosition(event) {
+        const pointerId = event.pointerId === this._pointers[0] ? this._pointers[1] : this._pointers[0];
+        return this._pointerPositions[pointerId];
+      }
+      //
+      _customWheelEvent(event) {
+        const mode = event.deltaMode;
+        const newEvent = {
+          clientX: event.clientX,
+          clientY: event.clientY,
+          deltaY: event.deltaY
+        };
+        switch (mode) {
+          case 1:
+            newEvent.deltaY *= 16;
+            break;
+          case 2:
+            newEvent.deltaY *= 100;
+            break;
+        }
+        if (event.ctrlKey && !this._controlActive) {
+          newEvent.deltaY *= 10;
+        }
+        return newEvent;
+      }
+    };
+  }
+});
+
+// src/test-glb.js
+var require_test_glb = __commonJS({
+  "src/test-glb.js"() {
     init_three_module();
     init_GLTFLoader();
-    var statusEl = document.getElementById("status");
-    var startBtn = document.getElementById("start-btn");
-    var overlay = document.getElementById("overlay");
-    var arHint = document.getElementById("ar-hint");
-    statusEl.textContent = "Loading 3D assets\u2026";
-    var renderer = new WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(window.devicePixelRatio);
+    init_OrbitControls();
+    var log2 = (s) => {
+      const el = document.getElementById("log");
+      if (el) el.textContent = s;
+      console.log(s);
+    };
+    var renderer = new WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0, 0);
-    renderer.xr.enabled = true;
+    renderer.setPixelRatio(window.devicePixelRatio);
     document.body.appendChild(renderer.domElement);
-    window.addEventListener("beforeunload", () => {
-      renderer.setAnimationLoop(null);
-      renderer.dispose();
-    });
     var scene = new Scene();
-    var camera = new PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 20);
-    scene.add(new AmbientLight(16777215, 1.4));
-    var dirLight = new DirectionalLight(16777215, 1.6);
-    dirLight.position.set(1, 3, 2);
-    scene.add(dirLight);
-    var fillLight = new DirectionalLight(11193599, 0.5);
-    fillLight.position.set(-2, 1, -1);
-    scene.add(fillLight);
-    var CUBE_SIZE = 0.1;
-    var cubeGeo = new BoxGeometry(CUBE_SIZE, CUBE_SIZE, CUBE_SIZE);
-    var cubeMat = new MeshStandardMaterial({ color: 16777215, roughness: 0.35, metalness: 0.05 });
-    var codeCube = new Mesh(cubeGeo, cubeMat);
-    codeCube.visible = false;
-    codeCube.userData.label = "code-cube";
-    scene.add(codeCube);
-    codeCube.add(new Mesh(
-      cubeGeo,
-      new MeshBasicMaterial({ color: 8947848, wireframe: true, transparent: true, opacity: 0.35 })
-    ));
-    var fbxModel = null;
-    var fbxMat = new MeshStandardMaterial({ color: 8965375, roughness: 0.3, metalness: 0.4 });
+    scene.background = new Color(3359829);
+    var camera = new PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1e-3, 100);
+    camera.position.set(0, 0.5, 2);
+    scene.add(new AmbientLight(16777215, 1.5));
+    var dir = new DirectionalLight(16777215, 2);
+    dir.position.set(2, 4, 3);
+    scene.add(dir);
+    scene.add(new GridHelper(4, 10, 6710886, 4473924));
+    scene.add(new AxesHelper(1));
+    var controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
     var loader = new GLTFLoader();
     loader.load(
       "./cube.glb",
       (gltf) => {
         const model = gltf.scene;
+        let meshCount = 0, totalTri = 0;
+        model.traverse((c) => {
+          if (!c.isMesh) return;
+          meshCount++;
+          const geo = c.geometry;
+          const tris = geo.index ? geo.index.count / 3 : geo.attributes.position.count / 3;
+          totalTri += tris;
+          console.log(`Mesh "${c.name}": verts=${geo.attributes.position.count}, tris=${tris}`);
+          c.material = new MeshStandardMaterial({ color: 8965375, roughness: 0.3, metalness: 0.4 });
+        });
         const box = new Box3().setFromObject(model);
         const size = new Vector3();
         box.getSize(size);
-        const maxDim = Math.max(size.x, size.y, size.z);
-        const scale = CUBE_SIZE / maxDim;
-        model.scale.setScalar(scale);
-        model.traverse((child) => {
-          if (child.isMesh) {
-            child.material = fbxMat;
-          }
-        });
-        model.visible = false;
-        model.userData.label = "fbx-cube";
+        const centre = new Vector3();
+        box.getCenter(centre);
+        model.position.sub(centre);
+        model.scale.setScalar(1 / Math.max(size.x, size.y, size.z));
         scene.add(model);
-        fbxModel = model;
-        if (spawned) placeFbxModel();
-        statusEl.textContent = "\u2705 Assets ready \u2014 tap Enter AR!";
+        log2(`\u2705 GLB loaded!
+Meshes: ${meshCount} | Triangles: ${totalTri}
+BBox: ${size.x.toFixed(3)} x ${size.y.toFixed(3)} x ${size.z.toFixed(3)}
+
+Drag to orbit`);
       },
-      (xhr) => {
-        if (xhr.total) statusEl.textContent = `Loading model\u2026 ${Math.round(xhr.loaded / xhr.total * 100)}%`;
-      },
-      (err) => {
-        console.error("GLB load error:", err);
-        statusEl.textContent = "\u26A0\uFE0F Model failed \u2013 code cube only. Tap Enter AR.";
-      }
+      void 0,
+      (err) => log2(`\u274C Load error: ${err.message || err}`)
     );
-    function grabbables() {
-      const list = [codeCube];
-      if (fbxModel) list.push(fbxModel);
-      return list;
-    }
-    var grabState = {};
-    var _invSrc = new Matrix4();
-    var _wPos = new Vector3();
-    var _wQuat = new Quaternion();
-    var _wSca = new Vector3();
-    var _srcPos = new Vector3();
-    var _objPos = new Vector3();
-    var _grabMat = new Matrix4();
-    function tryGrab(source, key, radius) {
-      if (grabState[key]?.grabbing) return;
-      source.getWorldPosition(_srcPos);
-      let closest = null, closestDist = radius;
-      for (const obj of grabbables()) {
-        if (!obj.visible) continue;
-        obj.getWorldPosition(_objPos);
-        const d = _srcPos.distanceTo(_objPos);
-        if (d < closestDist) {
-          closestDist = d;
-          closest = obj;
-        }
-      }
-      if (!closest) return;
-      _invSrc.copy(source.matrixWorld).invert();
-      grabState[key] = {
-        grabbing: true,
-        offset: new Matrix4().multiplyMatrices(_invSrc, closest.matrixWorld),
-        source,
-        target: closest
-      };
-      closest.traverse((c) => {
-        if (c.isMesh) c.material.emissive?.set(5592405);
-      });
-    }
-    function releaseGrab(key) {
-      if (!grabState[key]) return;
-      const target = grabState[key].target;
-      grabState[key].grabbing = false;
-      const stillHeld = Object.values(grabState).some((s) => s.grabbing && s.target === target);
-      if (!stillHeld) target?.traverse((c) => {
-        if (c.isMesh) c.material.emissive?.set(0);
-      });
-    }
-    for (let i = 0; i < 2; i++) {
-      const ctrl = renderer.xr.getController(i);
-      const key = `ctrl_${i}`;
-      ctrl.addEventListener("selectstart", () => tryGrab(ctrl, key, 0.2));
-      ctrl.addEventListener("selectend", () => releaseGrab(key));
-      scene.add(ctrl);
-      const ray = new Line(
-        new BufferGeometry().setFromPoints([
-          new Vector3(0, 0, 0),
-          new Vector3(0, 0, -0.4)
-        ]),
-        new LineBasicMaterial({ color: 16777215, transparent: true, opacity: 0.45 })
-      );
-      ray.name = "ray";
-      ctrl.add(ray);
-    }
-    var skinMat = new MeshStandardMaterial({ color: 16764074, roughness: 0.6 });
-    var JOINT_NAMES = [
-      "wrist",
-      "thumb-metacarpal",
-      "thumb-phalanx-proximal",
-      "thumb-phalanx-distal",
-      "thumb-tip",
-      "index-finger-metacarpal",
-      "index-finger-phalanx-proximal",
-      "index-finger-phalanx-intermediate",
-      "index-finger-phalanx-distal",
-      "index-finger-tip",
-      "middle-finger-metacarpal",
-      "middle-finger-phalanx-proximal",
-      "middle-finger-phalanx-intermediate",
-      "middle-finger-phalanx-distal",
-      "middle-finger-tip",
-      "ring-finger-metacarpal",
-      "ring-finger-phalanx-proximal",
-      "ring-finger-phalanx-intermediate",
-      "ring-finger-phalanx-distal",
-      "ring-finger-tip",
-      "pinky-finger-metacarpal",
-      "pinky-finger-phalanx-proximal",
-      "pinky-finger-phalanx-intermediate",
-      "pinky-finger-phalanx-distal",
-      "pinky-finger-tip"
-    ];
-    var BONES = [
-      ["wrist", "thumb-metacarpal"],
-      ["thumb-metacarpal", "thumb-phalanx-proximal"],
-      ["thumb-phalanx-proximal", "thumb-phalanx-distal"],
-      ["thumb-phalanx-distal", "thumb-tip"],
-      ["wrist", "index-finger-metacarpal"],
-      ["index-finger-metacarpal", "index-finger-phalanx-proximal"],
-      ["index-finger-phalanx-proximal", "index-finger-phalanx-intermediate"],
-      ["index-finger-phalanx-intermediate", "index-finger-phalanx-distal"],
-      ["index-finger-phalanx-distal", "index-finger-tip"],
-      ["wrist", "middle-finger-metacarpal"],
-      ["middle-finger-metacarpal", "middle-finger-phalanx-proximal"],
-      ["middle-finger-phalanx-proximal", "middle-finger-phalanx-intermediate"],
-      ["middle-finger-phalanx-intermediate", "middle-finger-phalanx-distal"],
-      ["middle-finger-phalanx-distal", "middle-finger-tip"],
-      ["wrist", "ring-finger-metacarpal"],
-      ["ring-finger-metacarpal", "ring-finger-phalanx-proximal"],
-      ["ring-finger-phalanx-proximal", "ring-finger-phalanx-intermediate"],
-      ["ring-finger-phalanx-intermediate", "ring-finger-phalanx-distal"],
-      ["ring-finger-phalanx-distal", "ring-finger-tip"],
-      ["wrist", "pinky-finger-metacarpal"],
-      ["pinky-finger-metacarpal", "pinky-finger-phalanx-proximal"],
-      ["pinky-finger-phalanx-proximal", "pinky-finger-phalanx-intermediate"],
-      ["pinky-finger-phalanx-intermediate", "pinky-finger-phalanx-distal"],
-      ["pinky-finger-phalanx-distal", "pinky-finger-tip"],
-      ["index-finger-metacarpal", "middle-finger-metacarpal"],
-      ["middle-finger-metacarpal", "ring-finger-metacarpal"],
-      ["ring-finger-metacarpal", "pinky-finger-metacarpal"]
-    ];
-    var boneMat = new LineBasicMaterial({ color: 16768443, transparent: true, opacity: 0.75 });
-    var handData = [null, null];
-    function buildHandVisual(hand, idx) {
-      if (handData[idx]) destroyHandVisual(idx);
-      const jointMeshes = /* @__PURE__ */ new Map();
-      for (const name of JOINT_NAMES) {
-        const joint = hand.joints[name];
-        if (!joint) continue;
-        const mesh = new Mesh(
-          new SphereGeometry(joint.jointRadius ?? 8e-3, 8, 6),
-          skinMat
-        );
-        joint.add(mesh);
-        jointMeshes.set(name, mesh);
-      }
-      const boneLines = [];
-      for (const [a, b] of BONES) {
-        const geo = new BufferGeometry().setFromPoints([new Vector3(), new Vector3()]);
-        const line = new Line(geo, boneMat);
-        scene.add(line);
-        boneLines.push({ line, a, b });
-      }
-      handData[idx] = { jointMeshes, boneLines, hand };
-    }
-    function destroyHandVisual(idx) {
-      const data = handData[idx];
-      if (!data) return;
-      for (const m of data.jointMeshes.values()) {
-        m.geometry.dispose();
-        m.parent?.remove(m);
-      }
-      for (const l of data.boneLines) {
-        l.line.geometry.dispose();
-        scene.remove(l.line);
-      }
-      handData[idx] = null;
-    }
-    var PINCH_ENTER = 0.03;
-    var PINCH_EXIT = 0.045;
-    var pinching = [false, false];
-    var _tipA = new Vector3();
-    var _tipB = new Vector3();
-    for (let i = 0; i < 2; i++) {
-      const hand = renderer.xr.getHand(i);
-      scene.add(hand);
-      hand.addEventListener("connected", (evt) => {
-        if (!evt.data.hand) return;
-        buildHandVisual(hand, i);
-        const ray = renderer.xr.getController(i).getObjectByName("ray");
-        if (ray) ray.visible = false;
-      });
-      hand.addEventListener("disconnected", () => {
-        destroyHandVisual(i);
-        releaseGrab(`hand_${i}`);
-        pinching[i] = false;
-        const ray = renderer.xr.getController(i).getObjectByName("ray");
-        if (ray) ray.visible = true;
-      });
-    }
+    renderer.setAnimationLoop(() => {
+      controls.update();
+      renderer.render(scene, camera);
+    });
     window.addEventListener("resize", () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     });
-    var _spawnBase = new Vector3();
-    var _spawnRight = new Vector3();
-    function placeFbxModel() {
-      if (!fbxModel) return;
-      fbxModel.position.copy(_spawnBase).addScaledVector(_spawnRight, 0.12);
-      fbxModel.rotation.set(0, 0, 0);
-      fbxModel.visible = true;
-    }
-    function spawnObjects() {
-      const xrCam = renderer.xr.getCamera();
-      const cPos = new Vector3();
-      const cDir = new Vector3();
-      xrCam.getWorldPosition(cPos);
-      xrCam.getWorldDirection(cDir);
-      cDir.y = 0;
-      cDir.normalize();
-      _spawnRight.crossVectors(cDir, new Vector3(0, 1, 0)).normalize();
-      _spawnBase.copy(cPos).addScaledVector(cDir, 0.55);
-      _spawnBase.y = cPos.y - 0.2;
-      codeCube.position.copy(_spawnBase).addScaledVector(_spawnRight, -0.12);
-      codeCube.rotation.set(0, 0, 0);
-      codeCube.visible = true;
-      placeFbxModel();
-    }
-    var clock = new Clock();
-    var spawned = false;
-    var _boneA = new Vector3();
-    var _boneB = new Vector3();
-    renderer.setAnimationLoop((_time, xrFrame) => {
-      const dt = clock.getDelta();
-      if (xrFrame && !spawned) {
-        spawned = true;
-        spawnObjects();
-      }
-      for (let i = 0; i < 2; i++) {
-        const data = handData[i];
-        if (!data) continue;
-        const hand = renderer.xr.getHand(i);
-        for (const { line, a, b } of data.boneLines) {
-          const jA = hand.joints[a], jB = hand.joints[b];
-          if (!jA || !jB) continue;
-          jA.getWorldPosition(_boneA);
-          jB.getWorldPosition(_boneB);
-          const pos = line.geometry.attributes.position;
-          pos.setXYZ(0, _boneA.x, _boneA.y, _boneA.z);
-          pos.setXYZ(1, _boneB.x, _boneB.y, _boneB.z);
-          pos.needsUpdate = true;
-        }
-        const thumbTip = hand.joints["thumb-tip"];
-        const indexTip = hand.joints["index-finger-tip"];
-        if (thumbTip && indexTip) {
-          thumbTip.getWorldPosition(_tipA);
-          indexTip.getWorldPosition(_tipB);
-          const dist = _tipA.distanceTo(_tipB);
-          const key = `hand_${i}`;
-          if (!pinching[i] && dist < PINCH_ENTER) {
-            pinching[i] = true;
-            tryGrab(indexTip, key, 0.12);
-          } else if (pinching[i] && dist > PINCH_EXIT) {
-            pinching[i] = false;
-            releaseGrab(key);
-          }
-        }
-      }
-      const grabbedTargets = new Set(
-        Object.values(grabState).filter((s) => s.grabbing).map((s) => s.target)
-      );
-      if (!grabbedTargets.has(codeCube)) codeCube.rotation.y += dt * 0.5;
-      if (fbxModel && !grabbedTargets.has(fbxModel)) fbxModel.rotation.y += dt * 0.7;
-      for (const state of Object.values(grabState)) {
-        if (!state.grabbing) continue;
-        _grabMat.multiplyMatrices(state.source.matrixWorld, state.offset);
-        _grabMat.decompose(_wPos, _wQuat, _wSca);
-        state.target.position.copy(_wPos);
-        state.target.quaternion.copy(_wQuat);
-      }
-      renderer.render(scene, camera);
-    });
-    async function checkSupport() {
-      startBtn.disabled = false;
-      if (!navigator.xr) {
-        statusEl.textContent = "\u26A0\uFE0F navigator.xr not found \u2013 use Meta Quest Browser.";
-        return;
-      }
-      try {
-        const ok = await Promise.race([
-          navigator.xr.isSessionSupported("immersive-ar"),
-          new Promise((_, r) => setTimeout(() => r(new Error("t/o")), 3e3))
-        ]);
-        if (ok && !fbxModel) statusEl.textContent = "\u2705 AR ready \u2013 loading FBX\u2026";
-        else if (ok) statusEl.textContent = "\u2705 AR + FBX ready!";
-      } catch {
-      }
-    }
-    startBtn.addEventListener("click", async () => {
-      startBtn.disabled = true;
-      statusEl.textContent = "Starting AR session\u2026";
-      try {
-        const session = await navigator.xr.requestSession("immersive-ar", {
-          requiredFeatures: ["local-floor"],
-          optionalFeatures: ["bounded-floor", "hand-tracking", "layers"]
-        });
-        renderer.xr.setSession(session);
-        overlay.classList.add("hidden");
-        arHint.style.display = "block";
-        setTimeout(() => {
-          arHint.style.display = "none";
-        }, 4e3);
-        session.addEventListener("end", () => {
-          overlay.classList.remove("hidden");
-          arHint.style.display = "none";
-          startBtn.disabled = false;
-          spawned = false;
-          codeCube.visible = false;
-          codeCube.rotation.set(0, 0, 0);
-          if (fbxModel) {
-            fbxModel.visible = false;
-            fbxModel.rotation.set(0, 0, 0);
-          }
-          for (const k in grabState) delete grabState[k];
-          cubeMat.emissive?.set(0);
-          pinching[0] = pinching[1] = false;
-          destroyHandVisual(0);
-          destroyHandVisual(1);
-          statusEl.textContent = "\u2705 Session ended \u2013 tap to re-enter AR.";
-        });
-      } catch (err) {
-        console.error(err);
-        statusEl.textContent = `\u274C ${err.message}`;
-        startBtn.disabled = false;
-      }
-    });
-    checkSupport();
   }
 });
-export default require_main();
+export default require_test_glb();
 /*! Bundled license information:
 
 three/build/three.core.js:
@@ -32634,4 +33349,3 @@ three/build/three.module.js:
    * SPDX-License-Identifier: MIT
    *)
 */
-//# sourceMappingURL=bundle.js.map

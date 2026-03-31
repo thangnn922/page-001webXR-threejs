@@ -80,6 +80,11 @@ loader.load(
     model.userData.label = 'fbx-cube';
     scene.add(model);
     fbxModel = model;
+
+    // Race condition fix: if XR session already started and spawn already ran,
+    // position the model immediately using the stored spawn layout
+    if (spawned) placeFbxModel();
+
     statusEl.textContent = '✅ Assets ready — tap Enter AR!';
   },
   (xhr) => {
@@ -273,6 +278,17 @@ window.addEventListener('resize', () => {
 });
 
 // ─── Helpers: spawn two objects side-by-side in front of the camera ───────────
+// Store spawn layout so late-loading models can place themselves
+const _spawnBase  = new THREE.Vector3();
+const _spawnRight = new THREE.Vector3();
+
+function placeFbxModel() {
+  if (!fbxModel) return;
+  fbxModel.position.copy(_spawnBase).addScaledVector(_spawnRight, 0.12);
+  fbxModel.rotation.set(0, 0, 0);
+  fbxModel.visible = true;
+}
+
 function spawnObjects() {
   const xrCam = renderer.xr.getCamera();
   const cPos  = new THREE.Vector3();
@@ -282,22 +298,18 @@ function spawnObjects() {
   cDir.y = 0; cDir.normalize();
 
   // Side offset vector (perpendicular to forward, horizontal)
-  const right = new THREE.Vector3().crossVectors(cDir, new THREE.Vector3(0, 1, 0)).normalize();
+  _spawnRight.crossVectors(cDir, new THREE.Vector3(0, 1, 0)).normalize();
 
-  const basePos = cPos.clone().addScaledVector(cDir, 0.55);
-  basePos.y     = cPos.y - 0.20;
+  _spawnBase.copy(cPos).addScaledVector(cDir, 0.55);
+  _spawnBase.y = cPos.y - 0.20;
 
   // Code cube: slightly to the left
-  codeCube.position.copy(basePos).addScaledVector(right, -0.12);
+  codeCube.position.copy(_spawnBase).addScaledVector(_spawnRight, -0.12);
   codeCube.rotation.set(0, 0, 0);
   codeCube.visible = true;
 
-  // FBX model: slightly to the right
-  if (fbxModel) {
-    fbxModel.position.copy(basePos).addScaledVector(right, 0.12);
-    fbxModel.rotation.set(0, 0, 0);
-    fbxModel.visible = true;
-  }
+  // FBX model: slightly to the right (may be null if still loading)
+  placeFbxModel();
 }
 
 // ─── Render Loop ──────────────────────────────────────────────────────────────

@@ -153,8 +153,8 @@ const gltf = {
     },
   ],
   bufferViews: [
-    { buffer: 0, byteOffset: 0,            byteLength: idxBuf.length },
-    { buffer: 0, byteOffset: idxBuf.length, byteLength: posBuf.length },
+    { buffer: 0, byteOffset: 0,             byteLength: idxBuf.length, target: 34963 }, // ELEMENT_ARRAY_BUFFER
+    { buffer: 0, byteOffset: idxBuf.length, byteLength: posBuf.length, target: 34962 }, // ARRAY_BUFFER
   ],
   buffers: [{ byteLength: binBuffer.length }],
 };

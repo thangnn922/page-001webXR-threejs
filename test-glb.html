@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>GLB Test Viewer</title>
+  <style>
+    * { margin:0; padding:0; }
+    body { background:#222; overflow:hidden; }
+    canvas { display:block; }
+    #log {
+      position:fixed; top:10px; left:10px;
+      color:#0f0; font:13px monospace;
+      background:rgba(0,0,0,.7); padding:8px 12px;
+      border-radius:6px; max-width:420px; white-space:pre-wrap;
+      z-index:10;
+    }
+  </style>
+</head>
+<body>
+  <div id="log">Loading GLB…</div>
+  <script type="module" src="./dist/test-glb.js"></script>
+</body>
+</html>

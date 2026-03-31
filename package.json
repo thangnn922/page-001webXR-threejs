@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "esbuild src/main.js --bundle --format=esm --outfile=dist/bundle.js --sourcemap",
+    "build:test": "esbuild src/test-glb.js --bundle --format=esm --outfile=dist/test-glb.js",
     "watch": "esbuild src/main.js --bundle --format=esm --outfile=dist/bundle.js --sourcemap --watch",
+    "validate:glb": "node tools/validate-glb.js",
     "start": "http-server . -p 8883 -c-1 --cors",
     "dev": "npm run build && npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm run validate:glb && npm run build",
+    "test": "npm run validate:glb"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +20,9 @@
   "devDependencies": {
     "@gltf-transform/cli": "^4.3.0",
     "esbuild": "^0.27.4",
+    "gltf-validator": "^2.0.0-dev.3.10",
     "http-server": "^14.1.1",
+    "puppeteer": "^24.40.0",
     "ws": "^8.20.0"
   },
   "dependencies": {
