@@ -109,8 +109,8 @@ function pad4(buf)  {
 
 const posArr  = new Float32Array(verts);
 const idxArr  = new Uint16Array(indices);          // <65536 vertices assumed
-const posBuf  = pad4(Buffer.from(posArr.buffer));
-const idxBuf  = pad4(Buffer.from(idxArr.buffer));
+const idxBuf  = pad4(Buffer.from(idxArr.buffer));  // indices first in binary
+const posBuf  = pad4(Buffer.from(posArr.buffer));  // positions second
 
 // Compute bounding box for GLTF accessor
 let minX = Infinity, minY = Infinity, minZ = Infinity;
@@ -121,7 +121,8 @@ for (let i = 0; i < verts.length; i += 3) {
   minZ = Math.min(minZ, verts[i+2]); maxZ = Math.max(maxZ, verts[i+2]);
 }
 
-const binBuffer = Buffer.concat([posBuf, idxBuf]);
+// BUG FIX: pack indices first so BV0(offset=0)=indices, BV1(offset=idxBuf.length)=positions
+const binBuffer = Buffer.concat([idxBuf, posBuf]);
 
 const gltf = {
   asset: { version: '2.0', generator: 'fbx2glb-minimal' },
