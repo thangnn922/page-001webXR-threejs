@@ -3,6 +3,8 @@
 > **Live demo:** https://thangnn922.github.io/page-001webXR-threejs/
 > **Device:** Meta Quest 3 · Browser: Meta Quest Browser (Chromium 144)
 
+![WebXR AR Demo](video%20result.gif)
+
 ---
 
 ## 🎯 Project Target
